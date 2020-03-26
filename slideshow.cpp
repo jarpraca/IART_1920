@@ -195,20 +195,7 @@ int hillClimbing(vector<vector<image>> slides)
 	while (images.size() != 0)
 	{
 		vector<int> scores;
-		for (int i = 0; i < images.size(); i++)
-		{
-			vector<image> v2;
-			v2.push_back(images[i]);
-
-			scores.push_back(valueSlideshow(slides[slides.size() - 1], v2));
-		}
-		int maxIndex = max_element(scores.begin(), scores.end()) - scores.begin();
-		vector<image> v1;
-		v1.push_back(images[maxIndex]);
-		slides.push_back(v1);
-		finalScore += scores[maxIndex];
-		images.erase(images.begin() + maxIndex);
-		cout << endl;
+		
 	}
 
 	for (int i = 0; i < slides.size(); i++)
@@ -216,7 +203,10 @@ int hillClimbing(vector<vector<image>> slides)
 		cout << slides[i][0].id << " ";
 	}
 
+<<<<<<< HEAD
 	cout << endl << finalScore << endl;*/
+=====
+>>>>>>> ddf7eeb39b2161645f517360132ebc5910ad3574
 
 	return 0;
 }
@@ -230,36 +220,12 @@ int valueSlideshow(vector<image> slide1, vector<image> slide2)
 		tags1.insert(tags1.end(), slide1[i].tags.begin(), slide1[i].tags.end());
 	}
 
-	sort(tags1.begin(), tags1.end());
-	
 	if(slide1.size() == 2)
 		unique(tags1.begin(), tags1.end());
 
 	vector<string> tags2;
 
 	for (size_t i = 0; i < slide2.size(); i++)
-	{
-		tags2.insert(tags2.end(), slide2[i].tags.begin(), slide2[i].tags.end());
-	}
-
-	sort(tags2.begin(), tags2.end());
-	
-	if(slide2.size() == 2)
-		unique(tags2.begin(), tags2.end());
-
-	vector<string> tagsCommon(10000000);
-	vector<string> tags1NotTags2(10000000);
-	vector<string> tags2NotTags1(10000000);
-	vector<string>::iterator it;
-
-	it = set_intersection(tags1.begin(), tags1.end(), tags2.begin(), tags2.end(), tagsCommon.begin());
-	tagsCommon.resize(it - tagsCommon.begin());
-
-	it = set_difference(tags1.begin(), tags1.end(), tags2.begin(), tags2.end(), tags1NotTags2.begin());
-	tags1NotTags2.resize(it - tags1NotTags2.begin());
-
-	it = set_difference(tags2.begin(), tags2.end(), tags1.begin(), tags1.end(), tags2NotTags1.begin());
-	tags2NotTags1.resize(it - tags2NotTags1.begin());
+	vector<string> tags1NotTags2(max(tags1.size(), tags2.size()));
 
 	return min(tagsCommon.size(), min(tags1NotTags2.size(), tags2NotTags1.size()));
-}
