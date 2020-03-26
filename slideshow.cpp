@@ -17,12 +17,12 @@ struct image
 };
 
 int valueSlideshow(vector<image> slide1, vector<image> slide2);
-int hillClimbing(vector<image> images);
+int hillClimbing(vector<vector<image>> slides);
+void orderImages(vector<image> images, vector<vector<image>>* slides);
 
-//Main function with very basic game play engine
 int main()
 {
-	string nome_ficheiro = "c_memorable_moments.txt";
+	string nome_ficheiro = "f.txt";
 	ifstream ficheiro;
 	ficheiro.open(nome_ficheiro);
 	if (ficheiro.fail())
@@ -39,6 +39,7 @@ int main()
 	getline(ficheiro, nr_images_aux);
 	nr_images = stoi(nr_images_aux);
 
+	vector<vector<image>> slides;
 	vector<image> images;
 
 	int id = 0;
@@ -65,53 +66,148 @@ int main()
 		img.nr_tags = nr_tags;
 		img.tags = tags;
 
-		cout << img.id << "   " << img.orientation << "   " << img.nr_tags << "   " << img.tags.size() << endl;
 		images.push_back(img);
 
 		id++;
 	}
 
-	hillClimbing(images);
+	orderImages(images, &slides);
+
+	hillClimbing(slides);
 }
 
-int hillClimbing(vector<image> images)
+void orderImages(vector<image> images, vector<vector<image>>* slides)
 {
-	vector<vector<image>> slides;
-	int firstSlide = rand() % images.size();
+	for (int i = 0; i < images.size() - 1; i++)
+	{
+		if (images[i].orientation == 'V' && images[i+1].orientation == 'H')
+		{
+			for (int j = i + 2; j < images.size(); j++)
+			{
+				if ((images[j].orientation == 'V' && j + 1 < images.size() && images[j + 1].orientation == 'H') || (images[j].orientation == 'V' && j == images.size() - 1))
+				{
+					vector<image> slide;
+					slide.push_back(images[i]);
+					slide.push_back(images[j]);
+					
+					slides->push_back(slide);
+					i++;
+					break;
+				}
+			}
+		}
+		else if(images[i].orientation == 'V' && images[i+1].orientation == 'V'){
+			vector<image> slide;
+			slide.push_back(images[i]);
+			slide.push_back(images[i+1]);
+
+			slides->push_back(slide);
+			i++;
+		}
+		else {
+			vector<image> slide;
+			slide.push_back(images[i]);
+			slides->push_back(slide);
+		}
+	}
+}
+
+bool swap_slides(vector<vector<image>>* slides, int firstSlide, int secondSlide) {
+
+	vector<image> leftNeighbourSlide1, rightNeighbourSlide1, leftNeighbourSlide2, rightNeighbourSlide2;
+	
+	copy( slides->at(firstSlide-1).begin(), slides->at(firstSlide-1).end(), leftNeighbourSlide1.begin() );
+	copy( slides->at(firstSlide+1).begin(), slides->at(firstSlide+1).end(), rightNeighbourSlide1.begin() );
+	copy( slides->at(secondSlide-1).begin(), slides->at(secondSlide-1).end(), leftNeighbourSlide2.begin() );
+	copy( slides->at(secondSlide+1).begin(), slides->at(secondSlide+1).end(), rightNeighbourSlide2.begin() );
+
+	int scoreLeftNeighbour1, scoreRightNeighbour1, scoreLeftNeighbour2, scoreRightNeighbour2, currentScore;
+
+	scoreLeftNeighbour1 = valueSlideshow(leftNeighbourSlide1, slides->at(firstSlide));
+	scoreRightNeighbour1 = valueSlideshow(rightNeighbourSlide1, slides->at(firstSlide));
+	scoreLeftNeighbour2 = valueSlideshow(leftNeighbourSlide2, slides->at(secondSlide));
+	scoreRightNeighbour2 = valueSlideshow(rightNeighbourSlide1, slides->at(secondSlide));
+	currentScore = scoreLeftNeighbour1 + scoreLeftNeighbour2 + scoreRightNeighbour1 + scoreRightNeighbour2;
+	
+	swap(slides->at(firstSlide), slides->at(secondSlide));
+
+	int newScoreLeftNeighbour1, newScoreRightNeighbour1, newScoreLeftNeighbour2, newScoreRightNeighbour2, newScore;
+	newScoreLeftNeighbour1 = valueSlideshow(leftNeighbourSlide1, slides->at(firstSlide));
+	newScoreRightNeighbour1 = valueSlideshow(rightNeighbourSlide1, slides->at(firstSlide));
+	newScoreLeftNeighbour2 = valueSlideshow(leftNeighbourSlide2, slides->at(secondSlide));
+	newScoreRightNeighbour2 = valueSlideshow(rightNeighbourSlide1, slides->at(secondSlide));
+	newScore = newScoreLeftNeighbour1 + newScoreLeftNeighbour2 + newScoreRightNeighbour1 + newScoreRightNeighbour2;
+
+	if(newScore < currentScore){
+		swap(slides->at(firstSlide), slides->at(secondSlide));
+		return false;
+	}
+	else
+		return true;
+	
+}
+
+bool swap_photos(vector<vector<image>>* slides, int firstSlide, int secondSlide){
+	int firstPhoto = rand() % 2;
+	int secondPhoto = rand() % 2;
+
+	image img = slides->at(firstSlide).at(firstPhoto);
+	slides->at(firstSlide).at(firstPhoto) = slides->at(secondSlide).at(secondPhoto);
+	slides->at(secondSlide).at(secondPhoto) = img;
+}
+
+int hillClimbing(vector<vector<image>> slides)
+{	
 	int finalScore = 0;
 
-	vector<image> v;
+	int firstSlide = rand() % slides.size();
+	int secondSlide = rand() % slides.size();
+	cout << "olaaaaaaaaaa" << endl;
+
+	// if (slides[firstSlide].size() == 2 && slides[secondSlide].size() == 2){
+	// 	int swap_choice = rand() % slides.size();
+		// if(swap_choice/2 == 0)
+			// swap_slides(&slides, firstSlide, secondSlide);
+		// else
+		// 	swap_photos(slides, firstSlide, secondSlide);
+	// }else{
+		swap_slides(&slides, firstSlide, secondSlide);
+	// }
+	for (int i = 0; i < slides.size(); i++)
+	{
+		cout << "[";
+		cout << slides[i][0].id << " ";
+		if(slides[i].size() == 2)
+			cout << slides[i][1].id;
+		cout << "] ";
+	}
+
+	cout << endl;
+	
+
+	/*vector<image> v;
 	v.push_back(images[firstSlide]);
 	slides.push_back(v);
 
 	images.erase(images.begin() + firstSlide);
 	vector<image>::iterator it;
 
-	while(images.size() != 0)
+	while (images.size() != 0)
 	{
 		vector<int> scores;
-		cout << "1" << endl;
 		for (int i = 0; i < images.size(); i++)
 		{
 			vector<image> v2;
-			cout << "2" << endl;
 			v2.push_back(images[i]);
 
-			cout << "3" << endl;
 			scores.push_back(valueSlideshow(slides[slides.size() - 1], v2));
 		}
-		cout << "4" << endl;
 		int maxIndex = max_element(scores.begin(), scores.end()) - scores.begin();
 		vector<image> v1;
-		cout << "5" << endl;
 		v1.push_back(images[maxIndex]);
-		cout << "5.5" << endl;
 		slides.push_back(v1);
-		cout << "6" << endl;
 		finalScore += scores[maxIndex];
-		cout << "7" << endl;
 		images.erase(images.begin() + maxIndex);
-		cout << "8" << endl;
 		cout << endl;
 	}
 
@@ -120,8 +216,7 @@ int hillClimbing(vector<image> images)
 		cout << slides[i][0].id << " ";
 	}
 
-	cout << endl
-		 << finalScore << endl;
+	cout << endl << finalScore << endl;*/
 
 	return 0;
 }
@@ -135,40 +230,36 @@ int valueSlideshow(vector<image> slide1, vector<image> slide2)
 		tags1.insert(tags1.end(), slide1[i].tags.begin(), slide1[i].tags.end());
 	}
 
-		cout << "9" << endl;
 	sort(tags1.begin(), tags1.end());
-	unique(tags1.begin(), tags1.end());
-		cout << "10" << endl;
+	
+	if(slide1.size() == 2)
+		unique(tags1.begin(), tags1.end());
 
 	vector<string> tags2;
 
-		cout << "11" << endl;
 	for (size_t i = 0; i < slide2.size(); i++)
 	{
 		tags2.insert(tags2.end(), slide2[i].tags.begin(), slide2[i].tags.end());
 	}
 
-		cout << "12" << endl;
 	sort(tags2.begin(), tags2.end());
-	unique(tags2.begin(), tags2.end());
+	
+	if(slide2.size() == 2)
+		unique(tags2.begin(), tags2.end());
 
 	vector<string> tagsCommon(10000000);
 	vector<string> tags1NotTags2(10000000);
 	vector<string> tags2NotTags1(10000000);
 	vector<string>::iterator it;
 
-		cout << "13" << endl;
 	it = set_intersection(tags1.begin(), tags1.end(), tags2.begin(), tags2.end(), tagsCommon.begin());
 	tagsCommon.resize(it - tagsCommon.begin());
 
-		cout << "14" << endl;
 	it = set_difference(tags1.begin(), tags1.end(), tags2.begin(), tags2.end(), tags1NotTags2.begin());
 	tags1NotTags2.resize(it - tags1NotTags2.begin());
 
-		cout << "15" << endl;
 	it = set_difference(tags2.begin(), tags2.end(), tags1.begin(), tags1.end(), tags2NotTags1.begin());
 	tags2NotTags1.resize(it - tags2NotTags1.begin());
 
-		cout << "16" << endl;
 	return min(tagsCommon.size(), min(tags1NotTags2.size(), tags2NotTags1.size()));
 }
