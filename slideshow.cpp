@@ -2,15 +2,16 @@
 
 int main()
 {
-	// string nome_ficheiro = "a_example.txt";
-	// string nome_ficheiro = "b_lovely_landscapes.txt";
+	//string nome_ficheiro = "a_example.txt";
+	//string nome_ficheiro = "b_lovely_landscapes.txt";
 	// string nome_ficheiro = "c_memorable_moments.txt";
-	// string nome_ficheiro = "d_pet_pictures.txt";
-	// string nome_ficheiro = "e_shiny_selfies.txt";
-	string nome_ficheiro = "f.txt";
+	string nome_ficheiro = "d_pet_pictures.txt";
+	//string nome_ficheiro = "e_shiny_selfies.txt";
+	// string nome_ficheiro = "f.txt";
 
 	ifstream ficheiro;
 	ficheiro.open(nome_ficheiro);
+
 	if (ficheiro.fail())
 	{
 		cerr << "Input file opening failed." << endl;
@@ -63,10 +64,17 @@ int main()
 
 	cout << "ordered" << endl;
 
+	int initialScore = valueSlideshow(&slides);
+	cout << "initialScore = " << initialScore << endl;
+
 	// hillClimbing(slides);
 	// simulatedAnnealing(slides);
 
-	createInitialGeneration(&slides);
+	// vector<int> generationScores;
+	// vector<vector<vector<image>>> generation = createInitialGeneration(&slides, &generationScores);
+	cout << "Family generated" << endl;
+	tabuSearch(slides, initialScore);
+	// geneticAlgorithm(&generation, &generationScores);
 }
 
 void orderImages(vector<image> images, vector<vector<image>> *slides)
@@ -161,17 +169,17 @@ bool evaluate_swap_hc(vector<vector<image>> *slides)
 	{
 		swap_choice = rand() % slides->size();
 		if (swap_choice / 2 == 0)
-			swap_slides(slides, firstSlide, secondSlide);
+			swapSlides(slides, firstSlide, secondSlide);
 		else
 		{
 			firstPhoto = rand() % 2;
 			secondPhoto = rand() % 2;
-			swap_photos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
+			swapPhotos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
 		}
 	}
 	else
 	{
-		swap_slides(slides, firstSlide, secondSlide);
+		swapSlides(slides, firstSlide, secondSlide);
 	}
 
 	int newScoreLeftNeighbour1, newScoreRightNeighbour1, newScoreLeftNeighbour2, newScoreRightNeighbour2, newScore;
@@ -205,16 +213,16 @@ bool evaluate_swap_hc(vector<vector<image>> *slides)
 		{
 			if (swap_choice / 2 == 0)
 			{
-				swap_slides(slides, firstSlide, secondSlide);
+				swapSlides(slides, firstSlide, secondSlide);
 			}
 			else
 			{
-				swap_photos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
+				swapPhotos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
 			}
 		}
 		else
 		{
-			swap_slides(slides, firstSlide, secondSlide);
+			swapSlides(slides, firstSlide, secondSlide);
 		}
 		return false;
 	}
@@ -277,17 +285,17 @@ bool evaluate_swap_sa(vector<vector<image>> *slides, double &temperature)
 	{
 		swap_choice = rand() % slides->size();
 		if (swap_choice / 2 == 0)
-			swap_slides(slides, firstSlide, secondSlide);
+			swapSlides(slides, firstSlide, secondSlide);
 		else
 		{
 			firstPhoto = rand() % 2;
 			secondPhoto = rand() % 2;
-			swap_photos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
+			swapPhotos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
 		}
 	}
 	else
 	{
-		swap_slides(slides, firstSlide, secondSlide);
+		swapSlides(slides, firstSlide, secondSlide);
 	}
 
 	int newScoreLeftNeighbour1, newScoreRightNeighbour1, newScoreLeftNeighbour2, newScoreRightNeighbour2, newScore;
@@ -325,16 +333,16 @@ bool evaluate_swap_sa(vector<vector<image>> *slides, double &temperature)
 			{
 				if (swap_choice / 2 == 0)
 				{
-					swap_slides(slides, firstSlide, secondSlide);
+					swapSlides(slides, firstSlide, secondSlide);
 				}
 				else
 				{
-					swap_photos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
+					swapPhotos(slides, firstSlide, secondSlide, firstPhoto, secondPhoto);
 				}
 			}
 			else
 			{
-				swap_slides(slides, firstSlide, secondSlide);
+				swapSlides(slides, firstSlide, secondSlide);
 			}
 
 			return false;
@@ -352,13 +360,13 @@ bool evaluate_swap_sa(vector<vector<image>> *slides, double &temperature)
 	}
 }
 
-bool swap_slides(vector<vector<image>> *slides, int firstSlide, int secondSlide)
+bool swapSlides(vector<vector<image>> *slides, int firstSlide, int secondSlide)
 {
 	swap(slides->at(firstSlide), slides->at(secondSlide));
 	return true;
 }
 
-bool swap_photos(vector<vector<image>> *slides, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto)
+bool swapPhotos(vector<vector<image>> *slides, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto)
 {
 	image img = slides->at(firstSlide).at(firstPhoto);
 	slides->at(firstSlide).at(firstPhoto) = slides->at(secondSlide).at(secondPhoto);
@@ -419,7 +427,6 @@ int simulatedAnnealing(vector<vector<image>> slides)
 		}
 		maxTries = 0;
 	}
-	cout << endl;
 
 	finalScore = valueSlideshow(&slides);
 
@@ -479,11 +486,12 @@ int valueSlideshow(vector<vector<image>> *slides)
 	return score;
 }
 
-vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> *slides)
+vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> *slides, vector<int> *generationScores)
 {
 	vector<vector<vector<image>>> generation;
 
 	generation.push_back(*slides);
+	generationScores->push_back(valueSlideshow(slides));
 
 	for (auto i = 0; i < 29; i++)
 	{
@@ -491,23 +499,288 @@ vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> *sli
 		int rand2 = rand() % slides->size();
 		vector<vector<image>> newSlides = *slides;
 
-		swap_slides(&newSlides, rand1, rand2);
+		swapSlides(&newSlides, rand1, rand2);
 
 		generation.push_back(newSlides);
-	}
+		generationScores->push_back(valueSlideshow(&newSlides));
 
-	for (auto j = 0; j < generation.size(); j++)
-	{
-		for (int i = 0; i < generation[j].size(); i++)
-		{
-			cout << "[";
-			cout << generation[j][i][0].id;
-			if (generation[j][i].size() == 2)
-				cout << " " << generation[j][i][1].id;
-			cout << "] ";
-		}
-		cout << endl;
+		// for (auto j = 0; j < generation.size(); j++)
+		// {
+		// 	for (int i = 0; i < generation[j].size(); i++)
+		// 	{
+		// 		cout << "[";
+		// 		cout << generation[j][i][0].id;
+		// 		if (generation[j][i].size() == 2)
+		// 			cout << " " << generation[j][i][1].id;
+		// 		cout << "] ";
+		// 	}
+		// 	cout << endl;
+		// }
 	}
 
 	return generation;
+}
+
+bool hasImage(vector<image> &slide, int id)
+{
+	for (int i = 0; i < slide.size(); i++)
+	{
+		if (slide[i].id == id)
+			return true;
+	}
+
+	return false;
+}
+
+bool hasImageVector(vector<vector<image>> &individual, int id)
+{
+	for (int i = 0; i < individual.size(); i++)
+	{
+		if (hasImage(individual[i], id))
+			return true;
+	}
+	return false;
+}
+
+void crossover(vector<vector<image>> &firstParent, vector<vector<image>> &secondParent)
+{
+	vector<vector<image>> child1(firstParent.size());
+	vector<vector<image>> child2(firstParent.size());
+
+	image child1Aux;
+	image child2Aux;
+
+	child1Aux.id = -1;
+	child2Aux.id = -1;
+
+	int crossoverPoint = (rand() % firstParent.size()) + 1;
+
+	copy(firstParent.begin(), firstParent.begin() + crossoverPoint, child1.begin());
+	copy(firstParent.begin() + crossoverPoint, firstParent.end(), child2.begin() + crossoverPoint);
+
+	int child1Index = crossoverPoint;
+	int child2Index = 0;
+
+	for (int i = 0; i < secondParent.size(); i++)
+	{
+		for (int j = 0; j < secondParent[i].size(); j++)
+		{
+			image currentImage = secondParent[i][j];
+			if (hasImageVector(child1, currentImage.id))
+			{
+				if (currentImage.orientation == 'V')
+				{
+					if (child2Aux.id == -1)
+					{
+						child2Aux = currentImage;
+					}
+					else
+					{
+						vector<image> slide;
+						slide.push_back(currentImage);
+						slide.push_back(child2Aux);
+						child2Aux.id = -1;
+						child2[child2Index] = slide;
+						child2Index++;
+					}
+				}
+				else
+				{
+					vector<image> slide;
+					slide.push_back(currentImage);
+					child2[child2Index] = slide;
+					child2Index++;
+				}
+			}
+			else
+			{
+				if (currentImage.orientation == 'V')
+				{
+					if (child1Aux.id == -1)
+					{
+						child1Aux = currentImage;
+					}
+					else
+					{
+						vector<image> slide;
+						slide.push_back(currentImage);
+						slide.push_back(child1Aux);
+						child1Aux.id = -1;
+						child1[child1Index] = slide;
+						child1Index++;
+					}
+				}
+				else
+				{
+					vector<image> slide;
+					slide.push_back(currentImage);
+					child1[child1Index] = slide;
+					child1Index++;
+				}
+			}
+		}
+	}
+
+	int scoreChild1 = valueSlideshow(&child1);
+	int scoreChild2 = valueSlideshow(&child2);
+
+	if (scoreChild1 > scoreChild2)
+	{
+		secondParent = child1;
+	}
+	else
+	{
+		secondParent = child2;
+	}
+}
+
+void mutation(vector<vector<image>> &individual)
+{
+	int firstSlide;
+	int secondSlide;
+	firstSlide = rand() % individual.size();
+	do
+	{
+		secondSlide = rand() % individual.size();
+	} while (secondSlide == firstSlide);
+
+	if (secondSlide < firstSlide)
+	{
+		int first_temp = firstSlide;
+		firstSlide = secondSlide;
+		secondSlide = first_temp;
+	}
+
+	if (individual[firstSlide].size() == 2 && individual[secondSlide].size() == 2)
+	{
+		int swap_choice = rand() % individual.size();
+		if (swap_choice / 2 == 0)
+			swapSlides(&individual, firstSlide, secondSlide);
+		else
+		{
+			int firstPhoto = rand() % 2;
+			int secondPhoto = rand() % 2;
+			swapPhotos(&individual, firstSlide, secondSlide, firstPhoto, secondPhoto);
+		}
+	}
+	else
+	{
+		swapSlides(&individual, firstSlide, secondSlide);
+	}
+}
+
+void geneticAlgorithm(vector<vector<vector<image>>> *generation, vector<int> *generationScores)
+{
+	int numGenerations = 0;
+	int newScore, currentScore;
+	vector<int>::iterator it;
+
+	while (numGenerations < generation->at(0).size())
+	{
+		do
+		{
+			it = max_element(generationScores->begin(), generationScores->end());
+			int firstParent = it - generationScores->begin();
+			int secondParent;
+			do
+			{
+				secondParent = rand() % generation->size();
+			} while (secondParent == firstParent);
+
+			currentScore = valueSlideshow(&generation->at(secondParent));
+
+			crossover(generation->at(firstParent), generation->at(secondParent));
+			mutation(generation->at(secondParent));
+
+			newScore = valueSlideshow(&generation->at(secondParent));
+			generationScores->at(secondParent) = newScore;
+		} while (newScore <= currentScore);
+		numGenerations++;
+	}
+
+	it = max_element(generationScores->begin(), generationScores->end());
+	int index = it - generationScores->begin();
+
+	cout << "\nFinal score  " << generationScores->at(index) << endl;
+}
+
+bool isEqualSlides(vector<vector<image>> slides1, vector<vector<image>> slides2)
+{
+	for (int i = 0; i < slides1.size(); i++)
+	{
+		if (slides1[i].size() != slides2[i].size())
+		{
+
+			return false;
+		}
+
+		for (int j = 0; j < slides1[i].size(); j++)
+		{
+			if (slides1[i][j].id != slides2[i][j].id)
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
+bool findInTabuList(vector<vector<image>> slides, queue<vector<vector<image>>> tabu_list)
+{
+	while (!tabu_list.empty())
+	{
+		vector<vector<image>> element = tabu_list.front();
+		tabu_list.pop();
+		if (isEqualSlides(element, slides))
+			return true;
+	}
+	return false;
+}
+
+vector<vector<image>> generateNeighbourhood(vector<vector<image>> slides, int currentScore, queue<vector<vector<image>>> tabu_list)
+{
+	vector<vector<image>> bestNeighbour;
+
+	for (int i = 0; i < slides.size() - 1; i++)
+	{
+		for (int j = i + 1; j < slides.size(); j++)
+		{
+			swapSlides(&slides, i, j);
+			int newScore = valueSlideshow(&slides);
+			if (newScore > currentScore && !findInTabuList(slides, tabu_list))
+			{
+				currentScore = newScore;
+				bestNeighbour = slides;
+				
+			}
+			swapSlides(&slides, i, j);
+		}
+	}
+	return bestNeighbour;
+}
+
+vector<vector<image>> tabuSearch(vector<vector<image>>& slides, int initialScore)
+{
+	vector<vector<image>> bestNeighbourhoodWithoutTabu;
+	vector<vector<image>> bestSlides = slides;
+	int maxTries = 0;
+	queue<vector<vector<image>>> tabu_list;
+
+	do
+	{
+		bestNeighbourhoodWithoutTabu = generateNeighbourhood(bestSlides, initialScore, tabu_list);
+		tabu_list.push(bestSlides);
+		if (tabu_list.size() > sqrt(slides.size()))
+		{
+			tabu_list.pop();
+		}
+
+		bestSlides = bestNeighbourhoodWithoutTabu;
+		maxTries++;
+	} while (maxTries < slides.size());
+
+	int newScore = valueSlideshow(&bestSlides);
+	cout << "\nNewScore = " << newScore << endl;
+
+	return bestSlides;
 }
