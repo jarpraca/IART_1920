@@ -1,82 +1,5 @@
 #include "slideshow.h"
 
-int main()
-{
-	//string nome_ficheiro = "a_example.txt";
-	//string nome_ficheiro = "b_lovely_landscapes.txt";
-	// string nome_ficheiro = "c_memorable_moments.txt";
-	string nome_ficheiro = "d_pet_pictures.txt";
-	//string nome_ficheiro = "e_shiny_selfies.txt";
-	// string nome_ficheiro = "f.txt";
-
-	ifstream ficheiro;
-	ficheiro.open(nome_ficheiro);
-
-	if (ficheiro.fail())
-	{
-		cerr << "Input file opening failed." << endl;
-		exit(1);
-	}
-
-	srand(time(NULL));
-
-	string aux;
-	string nr_images_aux;
-	int nr_images;
-	getline(ficheiro, nr_images_aux);
-	nr_images = stoi(nr_images_aux);
-
-	vector<vector<image>> slides;
-	vector<image> images;
-
-	int id = 0;
-	while (getline(ficheiro, aux))
-	{
-		struct image img;
-		string orientation, tag;
-		vector<string> tags;
-		orientation = aux.substr(0, aux.find(" "));
-		aux = aux.substr(aux.find(" ") + 1);
-		int nr_tags = stoi(aux.substr(0, aux.find(" ")));
-		aux = aux.substr(aux.find(" ") + 1);
-		int n = 0;
-		while (n < nr_tags)
-		{
-			tag = aux.substr(0, aux.find(" "));
-			tags.push_back(tag);
-			aux = aux.substr(aux.find(" ") + 1);
-			n++;
-		}
-
-		img.id = id;
-		img.orientation = orientation[0];
-		img.nr_tags = nr_tags;
-		img.tags = tags;
-
-		images.push_back(img);
-
-		id++;
-	}
-
-	cout << "read" << endl;
-
-	orderImages(images, &slides);
-
-	cout << "ordered" << endl;
-
-	int initialScore = valueSlideshow(&slides);
-	cout << "initialScore = " << initialScore << endl;
-
-	// hillClimbing(slides);
-	// simulatedAnnealing(slides);
-
-	// vector<int> generationScores;
-	// vector<vector<vector<image>>> generation = createInitialGeneration(&slides, &generationScores);
-	cout << "Family generated" << endl;
-	tabuSearch(slides, initialScore);
-	// geneticAlgorithm(&generation, &generationScores);
-}
-
 void orderImages(vector<image> images, vector<vector<image>> *slides)
 {
 	for (int i = 0; i < images.size(); i++)
@@ -380,13 +303,9 @@ int hillClimbing(vector<vector<image>> slides)
 	int finalScore = 0;
 	int maxTries = 0;
 
-	initialScore = valueSlideshow(&slides);
-
-	cout << "initial " << initialScore << endl;
-
 	int currentScore, newScore;
 
-	while (maxTries < sqrt(slides.size()))
+	while (maxTries < slides.size())
 	{
 		if (evaluate_swap_hc(&slides))
 		{
@@ -411,10 +330,6 @@ int simulatedAnnealing(vector<vector<image>> slides)
 	int initialScore = 0;
 	int finalScore = 0;
 	int maxTries = 0;
-
-	initialScore = valueSlideshow(&slides);
-
-	cout << "initial " << initialScore << endl;
 
 	double temperature = 1;
 
@@ -503,19 +418,6 @@ vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> *sli
 
 		generation.push_back(newSlides);
 		generationScores->push_back(valueSlideshow(&newSlides));
-
-		// for (auto j = 0; j < generation.size(); j++)
-		// {
-		// 	for (int i = 0; i < generation[j].size(); i++)
-		// 	{
-		// 		cout << "[";
-		// 		cout << generation[j][i][0].id;
-		// 		if (generation[j][i].size() == 2)
-		// 			cout << " " << generation[j][i][1].id;
-		// 		cout << "] ";
-		// 	}
-		// 	cout << endl;
-		// }
 	}
 
 	return generation;
@@ -741,25 +643,43 @@ vector<vector<image>> generateNeighbourhood(vector<vector<image>> slides, int cu
 {
 	vector<vector<image>> bestNeighbour;
 
-	for (int i = 0; i < slides.size() - 1; i++)
+	// for (int i = 0; i < slides.size() - 1; i++)
+	// {
+	// 	for (int j = i + 1; j < slides.size(); j++)
+	// 	{
+	// 		swapSlides(&slides, i, j);
+	// 		int newScore = valueSlideshow(&slides);
+	// 		if (newScore > currentScore && !findInTabuList(slides, tabu_list))
+	// 		{
+	// 			currentScore = newScore;
+	// 			bestNeighbour = slides;
+	// 		}
+	// 		swapSlides(&slides, i, j);
+	// 	}
+	// }
+
+	for (int i = 0; i < (int)sqrt(slides.size()); i++)
 	{
-		for (int j = i + 1; j < slides.size(); j++)
+		int rand1 = rand() % slides.size();
+		int rand2;
+		do
 		{
-			swapSlides(&slides, i, j);
-			int newScore = valueSlideshow(&slides);
-			if (newScore > currentScore && !findInTabuList(slides, tabu_list))
-			{
-				currentScore = newScore;
-				bestNeighbour = slides;
-				
-			}
-			swapSlides(&slides, i, j);
+			rand2 = rand() % slides.size();
+		} while (rand1 == rand2);
+
+		swapSlides(&slides, rand1, rand2);
+		int newScore = valueSlideshow(&slides);
+		if (newScore > currentScore && !findInTabuList(slides, tabu_list))
+		{
+			currentScore = newScore;
+			bestNeighbour = slides;
 		}
+		swapSlides(&slides, rand1, rand2);
 	}
 	return bestNeighbour;
 }
 
-vector<vector<image>> tabuSearch(vector<vector<image>>& slides, int initialScore)
+vector<vector<image>> tabuSearch(vector<vector<image>> &slides, int initialScore)
 {
 	vector<vector<image>> bestNeighbourhoodWithoutTabu;
 	vector<vector<image>> bestSlides = slides;
@@ -777,7 +697,7 @@ vector<vector<image>> tabuSearch(vector<vector<image>>& slides, int initialScore
 
 		bestSlides = bestNeighbourhoodWithoutTabu;
 		maxTries++;
-	} while (maxTries < slides.size());
+	} while (maxTries < slides.size() / 2);
 
 	int newScore = valueSlideshow(&bestSlides);
 	cout << "\nNewScore = " << newScore << endl;
