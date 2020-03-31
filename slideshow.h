@@ -8,6 +8,7 @@
 #include <math.h>
 #include <iomanip> 
 #include <queue>
+#include <numeric>
 
 using namespace std;
 
@@ -15,20 +16,23 @@ struct image
 {
 	int id;
 	char orientation;
-	int nr_tags;
+	int nrTags;
 	vector<string> tags;
 };
 
-int valueSlides(vector<image> slide1, vector<image> slide2);
-int valueSlideshow(vector<vector<image>>* slides);
-int hillClimbing(vector<vector<image>> slides);
-int simulatedAnnealing(vector<vector<image>> slides);
-void orderImages(vector<image> images, vector<vector<image>> *slides);
-bool swapSlides(vector<vector<image>> *slides, int firstSlide, int secondSlide);
-bool swapPhotos(vector<vector<image>> *slides, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto);
+int valueSlides(vector<image> &slide1, vector<image> &slide2);
+int valueSlideshow(vector<vector<image>>& slides);
+int hillClimbing(vector<vector<image>> &slides, int maxIterations, int initialScore);
+int simulatedAnnealing(vector<vector<image>> &slides, double initialTemperature, int maxIterations, int initialScore);
+void orderImages(vector<image> images, vector<vector<image>> &slides);
+bool swapSlides(vector<vector<image>> &slides, int firstSlide, int secondSlide);
+bool swapPhotos(vector<vector<image>> &slides, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto);
+void swapPhotosOrSlides(vector<vector<image>> &slides, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto, int swap_choice);
 int valueSlidesSet(vector<image> slide1, vector<image> slide2);
-vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> *slides, vector<int>* generationScores);
-void crossover(vector<vector<vector<image>>>* generation, int firstParent, int secondParent);
+vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> &slides, vector<int>& generationScores, int populationSize);
+void chooseChildCrossover(image currentImage, image &child1Aux, image &child2Aux, image &child1Index, image &child2Index);
+void crossover(vector<vector<vector<image>>>& generation, int firstParent, int secondParent);
 void mutation(vector<vector<image>>& individual);
-void geneticAlgorithm(vector<vector<vector<image>>>* generation, vector<int>* generationScores);
-vector<vector<image>> tabuSearch(vector<vector<image>>& slides, int initialScore);
+int geneticAlgorithm(vector<vector<vector<image>>>& generation, vector<int>& generationScores, int maxGenerations);
+vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slides, queue<vector<vector<image>>> tabuList, int numNeighbours);
+vector<vector<image>> tabuSearch(vector<vector<image>>& slides, int numIterations, int numNeighbours);

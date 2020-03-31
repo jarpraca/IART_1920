@@ -1,5 +1,5 @@
 #include "slideshow.h"
-#include <unistd.h>
+#include <chrono>
 
 using namespace std;
 string chooseFile()
@@ -11,12 +11,12 @@ string chooseFile()
             int option;
             cout << endl
                  << "Escolha um ficheiro de imagens:" << endl;
-            cout << "A - Example " << endl;
-            cout << "B - Lovely Landscapes" << endl;
-            cout << "C - Memorable Moments" << endl;
-            cout << "D - Pet Pictures" << endl;
-            cout << "E - Shiny Selfies" << endl;
-            cout << "F - Example 2" << endl;
+            cout << "1 - Ficheiro A: Example " << endl;
+            cout << "2 - Ficheiro B: Lovely Landscapes" << endl;
+            cout << "3 - Ficheiro C: Memorable Moments" << endl;
+            cout << "4 - Ficheiro D: Pet Pictures" << endl;
+            cout << "5 - Ficheiro E: Shiny Selfies" << endl;
+            cout << "6 - Ficheiro F: Another Example" << endl;
             cout << endl;
             cout << "Opcao? ";
             cin >> option;
@@ -65,10 +65,10 @@ string chooseFile()
     }
 }
 
-vector<image> readFile(string nome_ficheiro)
+vector<image> readFile(string nomeFicheiro)
 {
     ifstream ficheiro;
-    ficheiro.open(nome_ficheiro);
+    ficheiro.open(nomeFicheiro);
 
     if (ficheiro.fail())
     {
@@ -79,10 +79,10 @@ vector<image> readFile(string nome_ficheiro)
     srand(time(NULL));
 
     string aux;
-    string nr_images_aux;
-    int nr_images;
-    getline(ficheiro, nr_images_aux);
-    nr_images = stoi(nr_images_aux);
+    string nrImagesAux;
+    int nrImages;
+    getline(ficheiro, nrImagesAux);
+    nrImages = stoi(nrImagesAux);
 
     vector<image> images;
 
@@ -94,10 +94,10 @@ vector<image> readFile(string nome_ficheiro)
         vector<string> tags;
         orientation = aux.substr(0, aux.find(" "));
         aux = aux.substr(aux.find(" ") + 1);
-        int nr_tags = stoi(aux.substr(0, aux.find(" ")));
+        int nrTags = stoi(aux.substr(0, aux.find(" ")));
         aux = aux.substr(aux.find(" ") + 1);
         int n = 0;
-        while (n < nr_tags)
+        while (n < nrTags)
         {
             tag = aux.substr(0, aux.find(" "));
             tags.push_back(tag);
@@ -107,7 +107,7 @@ vector<image> readFile(string nome_ficheiro)
 
         img.id = id;
         img.orientation = orientation[0];
-        img.nr_tags = nr_tags;
+        img.nrTags = nrTags;
         img.tags = tags;
 
         images.push_back(img);
@@ -115,6 +115,91 @@ vector<image> readFile(string nome_ficheiro)
         id++;
     }
     return images;
+}
+
+void chooseNumIterations(int &numIterations)
+{
+    while (true)
+    {
+        try
+        {
+            string option;
+            cout << endl
+                 << "Choose number of iterations:" << endl;
+            cin >> option;
+            numIterations = stoi(option);
+            break;
+        }
+        catch (exception &e)
+        {
+            e.what();
+        }
+    }
+}
+
+void chooseTemperature(double &temperature)
+{
+    while (true)
+    {
+        try
+        {
+            string option;
+            cout << endl
+                 << "Choose initial temperature:" << endl;
+            cin >> option;
+            temperature = stod(option);
+            break;
+        }
+        catch (exception &e)
+        {
+            e.what();
+        }
+    }
+}
+
+void chooseNeighbourhoodSize(int &numNeighbours)
+{
+    while (true)
+    {
+        try
+        {
+            string option;
+            cout << endl
+                 << "Choose number of neighbours:" << endl;
+            cin >> option;
+            numNeighbours = stoi(option);
+            break;
+        }
+        catch (exception &e)
+        {
+            e.what();
+        }
+    }
+}
+
+void choosePopulationSize(int &populationSize, int &numGenerations)
+{
+    while (true)
+    {
+        try
+        {
+            string option;
+            cout << endl
+                 << "Choose population size:" << endl;
+            cin >> option;
+            populationSize = stoi(option);
+            option = "";
+            cout << endl
+                 << "Choose number of generations:" << endl;
+            cin >> option;
+            numGenerations = stoi(option);
+            break;
+        }
+        catch (exception &e)
+        {
+            e.what();
+        }
+    }
 }
 
 void chooseAlgorithm()
@@ -148,48 +233,86 @@ void chooseAlgorithm()
             {
             case 1:
             {
-                string nome_ficheiro = chooseFile();
-                vector<image> images = readFile(nome_ficheiro);
+                string nomeFicheiro = chooseFile();
+                vector<image> images = readFile(nomeFicheiro);
+                int numIterations;
+                chooseNumIterations(numIterations);
                 vector<vector<image>> slides;
-                orderImages(images, &slides);
-                int initialScore = valueSlideshow(&slides);
-                cout << "initialScore = " << initialScore << endl;
-                hillClimbing(slides);
+                orderImages(images, slides);
+                int initialScore = valueSlideshow(slides);
+                cout << "\nInitial Score = " << initialScore << endl;
+                auto ti = std::chrono::high_resolution_clock::now();
+                hillClimbing(slides, numIterations, initialScore);
+                auto tf = std::chrono::high_resolution_clock::now();
+                int finalScore = valueSlideshow(slides);
+                cout << "\n\nInitial Score = " << initialScore << endl;
+                cout << "\nFinal Score = " << finalScore << endl;
+                auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
+                cout << "Time Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 2:
             {
-                string nome_ficheiro = chooseFile();
-                vector<image> images = readFile(nome_ficheiro);
+                string nomeFicheiro = chooseFile();
+                vector<image> images = readFile(nomeFicheiro);
                 vector<vector<image>> slides;
-                orderImages(images, &slides);
-                int initialScore = valueSlideshow(&slides);
-                cout << "initialScore = " << initialScore << endl;
-                simulatedAnnealing(slides);
+                int numIterations;
+                double temperature;
+                chooseNumIterations(numIterations);
+                chooseTemperature(temperature);
+                orderImages(images, slides);
+                int initialScore = valueSlideshow(slides);
+                cout << "\nInitial Score = " << initialScore << endl;
+                auto ti = std::chrono::high_resolution_clock::now();
+                simulatedAnnealing(slides, temperature, numIterations, initialScore);
+                auto tf = std::chrono::high_resolution_clock::now();
+                int finalScore = valueSlideshow(slides);
+                cout << "\n\nInitial Score = " << initialScore << endl;
+                cout << "\nFinal Score = " << finalScore << endl;
+                auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
+                cout << "Time Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 3:
             {
-                string nome_ficheiro = chooseFile();
-                vector<image> images = readFile(nome_ficheiro);
+                string nomeFicheiro = chooseFile();
+                vector<image> images = readFile(nomeFicheiro);
                 vector<vector<image>> slides;
-                orderImages(images, &slides);
-                int initialScore = valueSlideshow(&slides);
-                cout << "initialScore = " << initialScore << endl;
-                tabuSearch(slides, initialScore);
+                int numIterations, numNeighbours;
+                chooseNumIterations(numIterations);
+                chooseNeighbourhoodSize(numNeighbours);
+                orderImages(images, slides);
+                int initialScore = valueSlideshow(slides);
+                cout << "\nInitial Score = " << initialScore << endl;
+                auto ti = std::chrono::high_resolution_clock::now();
+                vector<vector<image>> best = tabuSearch(slides, numIterations, numNeighbours);
+                auto tf = std::chrono::high_resolution_clock::now();
+                int finalScore = valueSlideshow(best);
+                cout << "\n\nInitial Score = " << initialScore << endl;
+                cout << "\nFinal Score = " << finalScore << endl;
+                auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
+                cout << "Time Execution = " << duration << " seconds" <<  endl;
                 break;
             }
             case 4:
             {
-                string nome_ficheiro = chooseFile();
-                vector<image> images = readFile(nome_ficheiro);
+                string nomeFicheiro = chooseFile();
+                vector<image> images = readFile(nomeFicheiro);
                 vector<vector<image>> slides;
-                orderImages(images, &slides);
-                int initialScore = valueSlideshow(&slides);
-                cout << "initialScore = " << initialScore << endl;
+                int numGenerations, populationSize;
+                choosePopulationSize(populationSize, numGenerations);
+                orderImages(images, slides);
+                int initialScore = valueSlideshow(slides);
+                cout << "\nInitial Score = " << initialScore << endl;
+                auto ti = std::chrono::high_resolution_clock::now();
                 vector<int> generationScores;
-                vector<vector<vector<image>>> generation = createInitialGeneration(&slides, &generationScores);
-                geneticAlgorithm(&generation, &generationScores);
+                vector<vector<vector<image>>> generation = createInitialGeneration(slides, generationScores, populationSize);
+                int finalScore = geneticAlgorithm(generation, generationScores, numGenerations);
+                auto tf = std::chrono::high_resolution_clock::now();
+                cout << "\n\nInitial Score = " << initialScore << endl;
+                cout << "\nFinal Score = " << finalScore << endl;
+                auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
+                cout << "Time Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 0:
@@ -212,5 +335,22 @@ int main()
     cout << "===   PHOTO SLIDESHOW   ===" << endl;
     cout << "===========================" << endl;
 
-    chooseAlgorithm();
+    // chooseAlgorithm();
+
+                vector<image> images = readFile("f.txt");
+                vector<vector<image>> slides;
+                int numGenerations, populationSize;
+                // choosePopulationSize(populationSize, numGenerations);
+                orderImages(images, slides);
+                int initialScore = valueSlideshow(slides);
+                cout << "\nInitial Score = " << initialScore << endl;
+                auto ti = std::chrono::high_resolution_clock::now();
+                vector<int> generationScores;
+                vector<vector<vector<image>>> generation = createInitialGeneration(slides, generationScores, 30);
+                int finalScore = geneticAlgorithm(generation, generationScores, 1000);
+                auto tf = std::chrono::high_resolution_clock::now();
+                cout << "\n\nInitial Score = " << initialScore << endl;
+                cout << "\nFinal Score = " << finalScore << endl;
+                auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
+                cout << "Time Execution = " << duration << " seconds" << endl;
 }
