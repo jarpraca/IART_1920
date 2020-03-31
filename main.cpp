@@ -4,8 +4,7 @@
 using namespace std;
 string chooseFile()
 {
-    while (true)
-    {
+ 
         try
         {
             int option;
@@ -62,7 +61,7 @@ string chooseFile()
         {
             e.what();
         }
-    }
+    
 }
 
 vector<image> readFile(string nomeFicheiro)
@@ -119,8 +118,7 @@ vector<image> readFile(string nomeFicheiro)
 
 void chooseNumIterations(int &numIterations)
 {
-    while (true)
-    {
+ 
         try
         {
             string option;
@@ -128,60 +126,51 @@ void chooseNumIterations(int &numIterations)
                  << "Choose number of iterations:" << endl;
             cin >> option;
             numIterations = stoi(option);
-            break;
         }
         catch (exception &e)
         {
             e.what();
         }
-    }
+    
 }
 
 void chooseTemperature(double &temperature)
 {
-    while (true)
-    {
-        try
+          try
         {
             string option;
             cout << endl
                  << "Choose initial temperature:" << endl;
             cin >> option;
             temperature = stod(option);
-            break;
         }
         catch (exception &e)
         {
             e.what();
         }
     }
-}
+
 
 void chooseNeighbourhoodSize(int &numNeighbours)
 {
-    while (true)
-    {
-        try
+           try
         {
             string option;
             cout << endl
                  << "Choose number of neighbours:" << endl;
             cin >> option;
             numNeighbours = stoi(option);
-            break;
         }
         catch (exception &e)
         {
             e.what();
         }
     }
-}
+
 
 void choosePopulationSize(int &populationSize, int &numGenerations)
 {
-    while (true)
-    {
-        try
+            try
         {
             string option;
             cout << endl
@@ -193,14 +182,13 @@ void choosePopulationSize(int &populationSize, int &numGenerations)
                  << "Choose number of generations:" << endl;
             cin >> option;
             numGenerations = stoi(option);
-            break;
         }
         catch (exception &e)
         {
             e.what();
         }
     }
-}
+
 
 void chooseAlgorithm()
 {
@@ -335,22 +323,5 @@ int main()
     cout << "===   PHOTO SLIDESHOW   ===" << endl;
     cout << "===========================" << endl;
 
-    // chooseAlgorithm();
-
-                vector<image> images = readFile("f.txt");
-                vector<vector<image>> slides;
-                int numGenerations, populationSize;
-                // choosePopulationSize(populationSize, numGenerations);
-                orderImages(images, slides);
-                int initialScore = valueSlideshow(slides);
-                cout << "\nInitial Score = " << initialScore << endl;
-                auto ti = std::chrono::high_resolution_clock::now();
-                vector<int> generationScores;
-                vector<vector<vector<image>>> generation = createInitialGeneration(slides, generationScores, 30);
-                int finalScore = geneticAlgorithm(generation, generationScores, 1000);
-                auto tf = std::chrono::high_resolution_clock::now();
-                cout << "\n\nInitial Score = " << initialScore << endl;
-                cout << "\nFinal Score = " << finalScore << endl;
-                auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
-                cout << "Time Execution = " << duration << " seconds" << endl;
+     chooseAlgorithm();
 }

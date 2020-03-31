@@ -338,12 +338,8 @@ void chooseOffspringCrossover(image currentImage, image &offspringAux, int &offs
 	else
 	{
 		vector<image> slide;
-		// cout << "5.9 " << endl;
 		slide.push_back(currentImage);
-		// cout << "5.10 " << endl;
-		// cout << offspringIndex << "  " << offspring.size() << endl;
 		offspring.at(offspringIndex) = slide;
-		// cout << "5.11 " << endl;
 		offspringIndex++;
 	}
 }
@@ -358,42 +354,29 @@ void crossover(vector<vector<image>> &firstParent, vector<vector<image>> &second
 
 	offspring1Aux.id = -1;
 	offspring2Aux.id = -1;
-	// cout << "1 " << endl;
 	int crossoverPoint = (rand() % firstParent.size()) + 1;
 
 	copy(firstParent.begin(), firstParent.begin() + crossoverPoint, offspring1.begin());
 	copy(firstParent.begin() + crossoverPoint, firstParent.end(), offspring2.begin() + crossoverPoint);
-	// cout << "2" << endl;
 
 	int offspring1Index = crossoverPoint;
 	int offspring2Index = 0;
-
-	// cout << "parent size:" << offspring1.size() << endl;
-
-	// cout << "Cross Point " << crossoverPoint << endl;
 
 	for (int i = 0; i < secondParent.size(); i++)
 	{
 		for (int j = 0; j < secondParent.at(i).size(); j++)
 		{
-			// cout << "4 " << i << endl;
 			image currentImage = secondParent.at(i).at(j);
-			// cout << "4.2 " << j << endl;
 			if (hasImageVector(offspring1, currentImage.id))
 			{
-				// cout << "4.3 " << i << " " << j << endl;
 				chooseOffspringCrossover(currentImage, offspring2Aux, offspring2Index, offspring2);
-				// cout << "4.4 " << i << endl;
 			}
 			else
 			{
-				// cout << "4.5 " << i << " "  << j << endl;
 				chooseOffspringCrossover(currentImage, offspring1Aux, offspring1Index, offspring1);
-				// cout << "4.6 " << i <<  endl;
 			}
 		}
 	}
-	// cout << "5"  << endl;
 	firstParent = offspring1;
 	secondParent = offspring2;
 }
@@ -442,7 +425,7 @@ vector<int> roulleteSelection(vector<vector<vector<image>>> &generation, vector<
 		fitnessProbability.push_back(currentSlot);
 	}
 
-	fitnessProbability.at(fitnessProbability.size()-1) = 1.0;
+	fitnessProbability.at(fitnessProbability.size() - 1) = 1.0;
 
 	int firstParent;
 	int secondParent = -1;
@@ -453,7 +436,6 @@ vector<int> roulleteSelection(vector<vector<vector<image>>> &generation, vector<
 	{
 		if (firstParentSelect <= fitnessProbability.at(i))
 		{
-			cout << "8" << endl;
 			firstParent = i;
 			break;
 		}
@@ -462,7 +444,7 @@ vector<int> roulleteSelection(vector<vector<vector<image>>> &generation, vector<
 	do
 	{
 		double secondParentSelect = (double)(rand() % 101) / (double)100;
-		secondParent=-1;
+		secondParent = -1;
 		for (int i = 0; i < fitnessProbability.size(); i++)
 		{
 			if (secondParentSelect <= fitnessProbability.at(i) && i != firstParent)
@@ -473,11 +455,9 @@ vector<int> roulleteSelection(vector<vector<vector<image>>> &generation, vector<
 		}
 	} while (secondParent == firstParent || secondParent == -1);
 
-	cout << "12" << endl;
 	vector<int> parents;
 	parents.push_back(firstParent);
 	parents.push_back(secondParent);
-	cout << "4" << endl;
 
 	return parents;
 }
@@ -485,25 +465,22 @@ vector<int> roulleteSelection(vector<vector<vector<image>>> &generation, vector<
 int geneticAlgorithm(vector<vector<vector<image>>> &generation, vector<int> &generationScores, int maxGenerations)
 {
 	int numGenerations = 0;
+	int maxImproveTries = 1000;
+	int improveTries = 0;
 	int currentScore, newScore, scoreFirstParent, scoreSecondParent, scoreFirstOffspring, scoreSecondOffspring;
 	vector<int>::iterator it;
 
 	while (numGenerations < maxGenerations)
 	{
+		vector<int> parents = roulleteSelection(generation, generationScores);
+
+		int firstParent = parents.at(0);
+		int secondParent = parents.at(1);
+		scoreFirstParent = generationScores.at(firstParent);
+		scoreSecondParent = generationScores.at(secondParent);
+		currentScore = scoreFirstParent + scoreSecondParent;
 		do
 		{
-			cout << "fuckkkkkkkkkkkkkkkkkkkkkk" << endl;
-			vector<int> parents = roulleteSelection(generation, generationScores);
-			cout << "parent " << parents[0] << endl;
-			cout << "parent " << parents[1] << endl;
-
-			int firstParent = parents.at(0);
-			int secondParent = parents.at(1);
-
-			scoreFirstParent = generationScores.at(firstParent);
-			scoreSecondParent = generationScores.at(secondParent);
-			currentScore = scoreFirstParent + scoreSecondParent;
-			cout << "current score: " << currentScore << endl;
 
 			crossover(generation.at(firstParent), generation.at(secondParent));
 			mutation(generation.at(firstParent));
@@ -513,17 +490,25 @@ int geneticAlgorithm(vector<vector<vector<image>>> &generation, vector<int> &gen
 			scoreSecondOffspring = valueSlideshow(generation.at(secondParent));
 			newScore = scoreFirstOffspring + scoreSecondOffspring;
 
-			cout << "new score: " << newScore << endl;
-			cout << "curretn score: " << currentScore << endl;
-			cout << "first parent: " << firstParent << endl;
 			generationScores.at(firstParent) = scoreFirstOffspring;
-			cout << "second parent: " << secondParent << endl;
 			generationScores.at(secondParent) = scoreSecondOffspring;
-			cout << "olaaaaaaa" << endl;
 
-		} while (newScore <= currentScore);
-		cout << "im gooddddddddddddddddddddddddddddddddddddddddd" << endl;
+			improveTries++;
+		} while (scoreFirstOffspring < scoreFirstParent && scoreSecondOffspring < scoreSecondParent && improveTries < maxImproveTries);
+
 		numGenerations++;
+
+		cout << endl << "Current Population Score = " << accumulate(generationScores.begin(), generationScores.end(), 0) << endl;
+		cout << "Current Generation = " << numGenerations << endl;
+
+		if(improveTries < maxImproveTries)
+			improveTries = 0;
+		else
+		{
+			break;
+		}
+		
+
 	}
 
 	it = max_element(generationScores.begin(), generationScores.end());
@@ -606,6 +591,7 @@ vector<vector<image>> tabuSearch(vector<vector<image>> &slides, int maxIteration
 
 		bestSlides = bestNeighbourWithoutTabu;
 		numIterations++;
+
 	} while (numIterations < maxIterations);
 
 	return bestSlides;
