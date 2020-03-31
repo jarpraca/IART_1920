@@ -1,5 +1,8 @@
 #include "slideshow.h"
 
+/**
+ * Joins all slideshow's vertical slides in pairs.
+ */
 void orderImages(vector<image> images, vector<vector<image>> &slides)
 {
 	for (int i = 0; i < images.size(); i++)
@@ -38,6 +41,9 @@ void orderImages(vector<image> images, vector<vector<image>> &slides)
 	}
 }
 
+/**
+ * Evaluates the score of two slides taking into account the left and right slides of each one needed to calculate the score
+ */
 int evaluateNeighbourSlides(vector<vector<image>> &slides, int firstSlide, int secondSlide)
 {
 	int scoreLeftNeighbour1, scoreRightNeighbour1, scoreLeftNeighbour2, scoreRightNeighbour2;
@@ -66,6 +72,10 @@ int evaluateNeighbourSlides(vector<vector<image>> &slides, int firstSlide, int s
 	return scoreLeftNeighbour1 + scoreLeftNeighbour2 + scoreRightNeighbour1 + scoreRightNeighbour2;
 }
 
+/**
+ * Generates two different random indexes used to swap slides and generates two different random indexes used to swap photos if needed.
+ * Generates a random number to determine which swap will be done and gets the score before and after the swap is done.
+ */
 void evaluateSwap(vector<vector<image>> &slides, int &firstSlide, int &secondSlide, int &firstPhoto, int &secondPhoto, int &swapChoice, int &currentScore, int &newScore)
 {
 	// Gets two random slides, with the first slide being the smaller index
@@ -93,6 +103,9 @@ void evaluateSwap(vector<vector<image>> &slides, int &firstSlide, int &secondSli
 	newScore = evaluateNeighbourSlides(slides, firstSlide, secondSlide);
 }
 
+/**
+ * Swaps two slides in the slideshow or two photos between two slides according to a random number received (swapChoice).
+ */
 void swapPhotosOrSlides(vector<vector<image>> &slides, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto, int swapChoice)
 {
 	if (slides.at(firstSlide).size() == 2 && slides.at(secondSlide).size() == 2)
@@ -112,6 +125,9 @@ void swapPhotosOrSlides(vector<vector<image>> &slides, int firstSlide, int secon
 	}
 }
 
+/**
+ * Evaluation function of the Hill Climing algorithm that changes the slideshow if the score of the random neighbour obtained is better than the older one.
+ */
 bool evaluateHC(vector<vector<image>> &slides, int &scoreDiff)
 {
 	int newScore, currentScore, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice;
@@ -130,12 +146,18 @@ bool evaluateHC(vector<vector<image>> &slides, int &scoreDiff)
 	}
 }
 
+/**
+ * Swaps two slideshow's slides.
+ */
 bool swapSlides(vector<vector<image>> &slides, int firstSlide, int secondSlide)
 {
 	swap(slides.at(firstSlide), slides.at(secondSlide));
 	return true;
 }
 
+/**
+ * Swaps two vertical photos in two different slides.
+ */
 bool swapPhotos(vector<vector<image>> &slides, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto)
 {
 	image img = slides.at(firstSlide).at(firstPhoto);
@@ -144,9 +166,11 @@ bool swapPhotos(vector<vector<image>> &slides, int firstSlide, int secondSlide, 
 	return true;
 }
 
+/**
+ * Hill Climbing algorithm stopping when a specific number of iterations is reached without the slideshow being changed.
+ */
 int hillClimbing(vector<vector<image>> &slides, int maxIterations, int initialScore)
 {
-	int finalScore = 0;
 	int numIterations = 0;
 
 	int scoreDiff;
@@ -165,9 +189,13 @@ int hillClimbing(vector<vector<image>> &slides, int maxIterations, int initialSc
 		}
 	}
 
-	return 0;
+	return initialScore;
 }
 
+/**
+ * Evaluation function of the Simulated Annealing algorithm that changes the slideshow if the score of the random neighbour obatined is better than the older one
+ * or if the probability to choose a worst neighbour, which is controlled by the temperature, demands so.
+ */
 bool evaluateSA(vector<vector<image>> &slides, double &temperature, int scoreDiff)
 {
 	int newScore, currentScore, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice;
@@ -177,10 +205,10 @@ bool evaluateSA(vector<vector<image>> &slides, double &temperature, int scoreDif
 	{
 		double delta = newScore - currentScore;
 		double randE = (double)(rand() % 1000) / 1000;
+
 		if (randE >= exp(delta / temperature))
 		{
 			swapPhotosOrSlides(slides, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice);
-
 			return false;
 		}
 		else
@@ -198,9 +226,12 @@ bool evaluateSA(vector<vector<image>> &slides, double &temperature, int scoreDif
 	}
 }
 
+/**
+ * 
+ */
 int simulatedAnnealing(vector<vector<image>> &slides, double initialTemperature, int maxIterations, int initialScore)
 {
-	int scoreDiff;
+	int scoreDiff = 0;
 	int finalScore = 0;
 	int numIterations = 0;
 
@@ -220,7 +251,7 @@ int simulatedAnnealing(vector<vector<image>> &slides, double initialTemperature,
 		numIterations = 0;
 	}
 
-	return 0;
+	return initialScore;
 }
 
 int valueSlides(vector<image> &slide1, vector<image> &slide2)
@@ -344,7 +375,7 @@ void chooseOffspringCrossover(image currentImage, image &offspringAux, int &offs
 	}
 }
 
-void crossover(vector<vector<image>> &firstParent, vector<vector<image>> &secondParent)
+int crossover(vector<vector<image>> &firstParent, vector<vector<image>> &secondParent, vector<vector<image>> &leastFitParent)
 {
 	vector<vector<image>> offspring1(firstParent.size());
 	vector<vector<image>> offspring2(firstParent.size());
@@ -377,8 +408,18 @@ void crossover(vector<vector<image>> &firstParent, vector<vector<image>> &second
 			}
 		}
 	}
-	firstParent = offspring1;
-	secondParent = offspring2;
+
+	int scoreFirstOffspring = valueSlideshow(offspring1);
+	int scoreSecondOffspring = valueSlideshow(offspring2);
+	
+	if(scoreFirstOffspring > scoreSecondOffspring){
+		leastFitParent = offspring1;
+		return scoreFirstOffspring;
+	}
+	else {
+		leastFitParent = offspring2;
+		return scoreSecondOffspring;
+	}
 }
 
 void mutation(vector<vector<image>> &slideshow)
@@ -465,7 +506,7 @@ vector<int> roulleteSelection(vector<vector<vector<image>>> &generation, vector<
 int geneticAlgorithm(vector<vector<vector<image>>> &generation, vector<int> &generationScores, int maxGenerations)
 {
 	int numGenerations = 0;
-	int maxImproveTries = 1000;
+	int maxImproveTries = 100;
 	int improveTries = 0;
 	int currentScore, newScore, scoreFirstParent, scoreSecondParent, scoreFirstOffspring, scoreSecondOffspring;
 	vector<int>::iterator it;
@@ -473,42 +514,43 @@ int geneticAlgorithm(vector<vector<vector<image>>> &generation, vector<int> &gen
 	while (numGenerations < maxGenerations)
 	{
 		vector<int> parents = roulleteSelection(generation, generationScores);
-
+		int leastFit;
 		int firstParent = parents.at(0);
 		int secondParent = parents.at(1);
 		scoreFirstParent = generationScores.at(firstParent);
 		scoreSecondParent = generationScores.at(secondParent);
-		currentScore = scoreFirstParent + scoreSecondParent;
+
 		do
 		{
+			if (scoreFirstParent < scoreSecondParent){
+				leastFit = firstParent;
+				currentScore = scoreFirstParent;
+			}else{
+				leastFit = secondParent;
+				currentScore = scoreSecondParent;
+			}
 
-			crossover(generation.at(firstParent), generation.at(secondParent));
-			mutation(generation.at(firstParent));
-			mutation(generation.at(secondParent));
+			newScore = crossover(generation.at(firstParent), generation.at(secondParent), generation.at(leastFit));
+			
+			double mutationRand = (double)(rand() % 1001) / (double)1000;
 
-			scoreFirstOffspring = valueSlideshow(generation.at(firstParent));
-			scoreSecondOffspring = valueSlideshow(generation.at(secondParent));
-			newScore = scoreFirstOffspring + scoreSecondOffspring;
+			if(mutationRand < 0.01){
+				mutation(generation.at(leastFit));
+				newScore = valueSlideshow(generation.at(leastFit));
+			}
+			generationScores.at(leastFit) = newScore;
 
-			generationScores.at(firstParent) = scoreFirstOffspring;
-			generationScores.at(secondParent) = scoreSecondOffspring;
-
+			cout << "." ;
 			improveTries++;
-		} while (scoreFirstOffspring < scoreFirstParent && scoreSecondOffspring < scoreSecondParent && improveTries < maxImproveTries);
+		} while (newScore <= currentScore && improveTries < maxImproveTries);
 
 		numGenerations++;
-
-		cout << endl << "Current Population Score = " << accumulate(generationScores.begin(), generationScores.end(), 0) << endl;
+		int max = generationScores.at(max_element(generationScores.begin(), generationScores.end()) - generationScores.begin());
+		cout << endl << endl << "Current Best Score = " << max << endl; 
 		cout << "Current Generation = " << numGenerations << endl;
-
-		if(improveTries < maxImproveTries)
-			improveTries = 0;
-		else
-		{
-			break;
-		}
 		
-
+		improveTries = 0;
+	
 	}
 
 	it = max_element(generationScores.begin(), generationScores.end());
@@ -550,41 +592,50 @@ bool findInTabuList(vector<vector<image>> slides, queue<vector<vector<image>>> t
 	return false;
 }
 
-vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slides, queue<vector<vector<image>>> tabuList, int numNeighbours)
+vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slides, queue<vector<vector<image>>> tabuList, int numNeighbours, int &scoreDiff)
 {
 	vector<vector<image>> bestNeighbour = slides;
+	int initialScore, newScore;
+	scoreDiff = 0;
 
 	for (int i = 0; i < numNeighbours; i++)
 	{
-		int currentScore, newScore, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice;
+		int currentScore, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice;
 
 		evaluateSwap(slides, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice, currentScore, newScore);
+
+		if (i == 0){
+			initialScore = currentScore;
+		}
 
 		if (newScore > currentScore && !findInTabuList(slides, tabuList))
 		{
 			currentScore = newScore;
+			scoreDiff = newScore - initialScore;
 			copy(slides.begin(), slides.end(), bestNeighbour.begin());
 		}
 
 		swapPhotosOrSlides(slides, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice);
 	}
 
+
 	return bestNeighbour;
 }
 
-vector<vector<image>> tabuSearch(vector<vector<image>> &slides, int maxIterations, int numNeighbours)
+int tabuSearch(vector<vector<image>> &slides, int maxIterations, int numNeighbours, int initialScore)
 {
 	vector<vector<image>> bestNeighbourWithoutTabu;
 	vector<vector<image>> bestSlides = slides;
 	int numIterations = 0;
 	queue<vector<vector<image>>> tabuList;
+	int scoreDiff;
+	int repeatedScores = 0;
 
 	do
 	{
-		bestNeighbourWithoutTabu = generateNeighbourhood(bestSlides, tabuList, numNeighbours);
-
+		bestNeighbourWithoutTabu = generateNeighbourhood(bestSlides, tabuList, numNeighbours, scoreDiff);
 		tabuList.push(bestSlides);
-		if (tabuList.size() > sqrt(slides.size()))
+		if (tabuList.size() > sqrt(maxIterations))
 		{
 			tabuList.pop();
 		}
@@ -592,7 +643,16 @@ vector<vector<image>> tabuSearch(vector<vector<image>> &slides, int maxIteration
 		bestSlides = bestNeighbourWithoutTabu;
 		numIterations++;
 
-	} while (numIterations < maxIterations);
+		initialScore += scoreDiff;
+		if(scoreDiff == 0)
+			repeatedScores++;
+		else
+			repeatedScores = 0;
+		
+		
+		cout << endl << "Current Score = " << initialScore << endl;
 
-	return bestSlides;
+	} while (numIterations < maxIterations && repeatedScores < max(sqrt(maxIterations), 100.0));
+
+	return initialScore;
 }

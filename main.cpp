@@ -4,64 +4,63 @@
 using namespace std;
 string chooseFile()
 {
- 
-        try
+
+    try
+    {
+        int option;
+        cout << endl
+             << "Escolha um ficheiro de imagens:" << endl;
+        cout << "1 - Ficheiro A: Example " << endl;
+        cout << "2 - Ficheiro B: Lovely Landscapes" << endl;
+        cout << "3 - Ficheiro C: Memorable Moments" << endl;
+        cout << "4 - Ficheiro D: Pet Pictures" << endl;
+        cout << "5 - Ficheiro E: Shiny Selfies" << endl;
+        cout << "6 - Ficheiro F: Another Example" << endl;
+        cout << endl;
+        cout << "Opcao? ";
+        cin >> option;
+        option = toupper(option);
+        while (!cin || ((option != 1) && (option != 2) && (option != 3) && (option != 4) && (option != 5) && (option != 6)))
         {
-            int option;
+            cin.clear();
+            cin.ignore(100000, '\n');
             cout << endl
-                 << "Escolha um ficheiro de imagens:" << endl;
-            cout << "1 - Ficheiro A: Example " << endl;
-            cout << "2 - Ficheiro B: Lovely Landscapes" << endl;
-            cout << "3 - Ficheiro C: Memorable Moments" << endl;
-            cout << "4 - Ficheiro D: Pet Pictures" << endl;
-            cout << "5 - Ficheiro E: Shiny Selfies" << endl;
-            cout << "6 - Ficheiro F: Another Example" << endl;
-            cout << endl;
-            cout << "Opcao? ";
+                 << "Invalid Input" << endl;
+            cout << "Option? ";
             cin >> option;
-            option = toupper(option);
-            while (!cin || ((option != 1) && (option != 2) && (option != 3) && (option != 4) && (option != 5) && (option != 6)))
-            {
-                cin.clear();
-                cin.ignore(100000, '\n');
-                cout << endl
-                     << "Invalid Input" << endl;
-                cout << "Option? ";
-                cin >> option;
-            }
-            switch (option)
-            {
-            case 1:
-            {
-                return "a_example.txt";
-            }
-            case 2:
-            {
-                return "b_lovely_landscapes.txt";
-            }
-            case 3:
-            {
-                return "c_memorable_moments.txt";
-            }
-            case 4:
-            {
-                return "d_pet_pictures.txt";
-            }
-            case 5:
-            {
-                return "e_shiny_selfies.txt";
-            }
-            case 6:
-            {
-                return "f.txt";
-            }
-            }
         }
-        catch (exception &e)
+        switch (option)
         {
-            e.what();
+        case 1:
+        {
+            return "a_example.txt";
         }
-    
+        case 2:
+        {
+            return "b_lovely_landscapes.txt";
+        }
+        case 3:
+        {
+            return "c_memorable_moments.txt";
+        }
+        case 4:
+        {
+            return "d_pet_pictures.txt";
+        }
+        case 5:
+        {
+            return "e_shiny_selfies.txt";
+        }
+        case 6:
+        {
+            return "f.txt";
+        }
+        }
+    }
+    catch (exception &e)
+    {
+        e.what();
+    }
 }
 
 vector<image> readFile(string nomeFicheiro)
@@ -118,77 +117,73 @@ vector<image> readFile(string nomeFicheiro)
 
 void chooseNumIterations(int &numIterations)
 {
- 
-        try
-        {
-            string option;
-            cout << endl
-                 << "Choose number of iterations:" << endl;
-            cin >> option;
-            numIterations = stoi(option);
-        }
-        catch (exception &e)
-        {
-            e.what();
-        }
-    
+
+    try
+    {
+        string option;
+        cout << endl
+             << "Choose number of iterations:" << endl;
+        cin >> option;
+        numIterations = stoi(option);
+    }
+    catch (exception &e)
+    {
+        e.what();
+    }
 }
 
 void chooseTemperature(double &temperature)
 {
-          try
-        {
-            string option;
-            cout << endl
-                 << "Choose initial temperature:" << endl;
-            cin >> option;
-            temperature = stod(option);
-        }
-        catch (exception &e)
-        {
-            e.what();
-        }
+    try
+    {
+        string option;
+        cout << endl
+             << "Choose initial temperature:" << endl;
+        cin >> option;
+        temperature = stod(option);
     }
-
+    catch (exception &e)
+    {
+        e.what();
+    }
+}
 
 void chooseNeighbourhoodSize(int &numNeighbours)
 {
-           try
-        {
-            string option;
-            cout << endl
-                 << "Choose number of neighbours:" << endl;
-            cin >> option;
-            numNeighbours = stoi(option);
-        }
-        catch (exception &e)
-        {
-            e.what();
-        }
+    try
+    {
+        string option;
+        cout << endl
+             << "Choose number of neighbours:" << endl;
+        cin >> option;
+        numNeighbours = stoi(option);
     }
-
+    catch (exception &e)
+    {
+        e.what();
+    }
+}
 
 void choosePopulationSize(int &populationSize, int &numGenerations)
 {
-            try
-        {
-            string option;
-            cout << endl
-                 << "Choose population size:" << endl;
-            cin >> option;
-            populationSize = stoi(option);
-            option = "";
-            cout << endl
-                 << "Choose number of generations:" << endl;
-            cin >> option;
-            numGenerations = stoi(option);
-        }
-        catch (exception &e)
-        {
-            e.what();
-        }
+    try
+    {
+        string option;
+        cout << endl
+             << "Choose population size:" << endl;
+        cin >> option;
+        populationSize = stoi(option);
+        option = "";
+        cout << endl
+             << "Choose number of generations:" << endl;
+        cin >> option;
+        numGenerations = stoi(option);
     }
-
+    catch (exception &e)
+    {
+        e.what();
+    }
+}
 
 void chooseAlgorithm()
 {
@@ -230,9 +225,8 @@ void chooseAlgorithm()
                 int initialScore = valueSlideshow(slides);
                 cout << "\nInitial Score = " << initialScore << endl;
                 auto ti = std::chrono::high_resolution_clock::now();
-                hillClimbing(slides, numIterations, initialScore);
+                int finalScore = hillClimbing(slides, numIterations, initialScore);
                 auto tf = std::chrono::high_resolution_clock::now();
-                int finalScore = valueSlideshow(slides);
                 cout << "\n\nInitial Score = " << initialScore << endl;
                 cout << "\nFinal Score = " << finalScore << endl;
                 auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
@@ -252,9 +246,8 @@ void chooseAlgorithm()
                 int initialScore = valueSlideshow(slides);
                 cout << "\nInitial Score = " << initialScore << endl;
                 auto ti = std::chrono::high_resolution_clock::now();
-                simulatedAnnealing(slides, temperature, numIterations, initialScore);
+                int finalScore = simulatedAnnealing(slides, temperature, numIterations, initialScore);
                 auto tf = std::chrono::high_resolution_clock::now();
-                int finalScore = valueSlideshow(slides);
                 cout << "\n\nInitial Score = " << initialScore << endl;
                 cout << "\nFinal Score = " << finalScore << endl;
                 auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
@@ -273,13 +266,12 @@ void chooseAlgorithm()
                 int initialScore = valueSlideshow(slides);
                 cout << "\nInitial Score = " << initialScore << endl;
                 auto ti = std::chrono::high_resolution_clock::now();
-                vector<vector<image>> best = tabuSearch(slides, numIterations, numNeighbours);
+                int finalScore = tabuSearch(slides, numIterations, numNeighbours, initialScore);
                 auto tf = std::chrono::high_resolution_clock::now();
-                int finalScore = valueSlideshow(best);
                 cout << "\n\nInitial Score = " << initialScore << endl;
                 cout << "\nFinal Score = " << finalScore << endl;
                 auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
-                cout << "Time Execution = " << duration << " seconds" <<  endl;
+                cout << "Time Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 4:
@@ -323,5 +315,5 @@ int main()
     cout << "===   PHOTO SLIDESHOW   ===" << endl;
     cout << "===========================" << endl;
 
-     chooseAlgorithm();
+    chooseAlgorithm();
 }
