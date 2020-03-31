@@ -29,7 +29,7 @@ void swapPhotosOrSlides(vector<vector<image>> &slideshow, int firstSlide, int se
 bool swapSlides(vector<vector<image>> &slideshow, int firstSlide, int secondSlide);
 bool swapPhotos(vector<vector<image>> &slideshow, int firstSlide, int secondSlide, int firstPhoto, int secondPhoto);
 int simulatedAnnealing(vector<vector<image>> &slideshow, double initialTemperature, int maxIterations, int initialScore);
-bool evaluateSA(vector<vector<image>> &slideshow, double &temperature, int scoreDiff);
+bool evaluateSA(vector<vector<image>> &slideshow, double &temperature, int &scoreDiff);
 int tabuSearch(vector<vector<image>> &slideshow, int maxIterations, int numNeighbours, int initialScore);
 vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slideshow, queue<vector<vector<image>>> tabuList, int numNeighbours, int &scoreDiff);
 bool findInTabuList(vector<vector<image>> slideshow, queue<vector<vector<image>>> tabuList);

@@ -109,7 +109,6 @@ void evaluateSwap(vector<vector<image>> &slideshow, int &firstSlide, int &second
 	}
 
 	currentScore = evaluateNeighbourSlides(slideshow, firstSlide, secondSlide);
-
 	swapChoice = rand() % slideshow.size();
 	firstPhoto = rand() % 2;
 	secondPhoto = rand() % 2;
@@ -195,7 +194,7 @@ bool swapPhotos(vector<vector<image>> &slideshow, int firstSlide, int secondSlid
 /**
  * Simulated Annealing algorithm stopping when the temperature is less than 0,01 such that for each temperature a determined number of iterations is done.
  */
-int simulatedAnnealing(vector<vector<image>> &slideshow, double initialTemperature, int maxIterations, int initialScore)
+int simulatedAnnealing(vector<vector<image>> &slides, double initialTemperature, int maxIterations, int initialScore)
 {
 	int scoreDiff = 0;
 	int finalScore = 0;
@@ -211,7 +210,7 @@ int simulatedAnnealing(vector<vector<image>> &slideshow, double initialTemperatu
 
 		while (numIterations < maxIterations)
 		{
-			evaluateSA(slideshow, temperature, scoreDiff);
+			evaluateSA(slides, temperature, scoreDiff);
 			numIterations++;
 		}
 		numIterations = 0;
@@ -224,10 +223,10 @@ int simulatedAnnealing(vector<vector<image>> &slideshow, double initialTemperatu
  * Auxiliar function of the Simulated Annealing algorithm that changes the slideshow if the score of the random neighbour solution obatined is better than the older one
  * or if the probability to choose a worst neighbour solution, which is controlled by the temperature, demands so.
  */
-bool evaluateSA(vector<vector<image>> &slideshow, double &temperature, int scoreDiff)
+bool evaluateSA(vector<vector<image>> &slides, double &temperature, int &scoreDiff)
 {
 	int newScore, currentScore, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice;
-	evaluateSwap(slideshow, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice, currentScore, newScore);
+	evaluateSwap(slides, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice, currentScore, newScore);
 
 	if (newScore < currentScore)
 	{
@@ -236,7 +235,7 @@ bool evaluateSA(vector<vector<image>> &slideshow, double &temperature, int score
 
 		if (randE >= exp(delta / temperature))
 		{
-			swapPhotosOrSlides(slideshow, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice);
+			swapPhotosOrSlides(slides, firstSlide, secondSlide, firstPhoto, secondPhoto, swapChoice);
 			return false;
 		}
 		else
