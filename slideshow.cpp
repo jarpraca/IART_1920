@@ -369,22 +369,44 @@ bool areSlideshowsEqual(vector<vector<image>> slideshow1, vector<vector<image>> 
  */
 vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> &slideshow, vector<int> &generationScores, int populationSize)
 {
+	cout << "\nGenerating first generation..." << endl;
+
 	vector<vector<vector<image>>> generation;
 
 	generation.push_back(slideshow);
-	generationScores.push_back(valueSlideshow(slideshow));
+	int initialScore = valueSlideshow(slideshow);
+	generationScores.push_back(initialScore);
 
-	for (auto i = 0; i < populationSize - 1; i++)
+	for (auto i = 0; i < populationSize; i++)
 	{
-		int rand1 = rand() % slideshow.size();
-		int rand2 = rand() % slideshow.size();
+		cout << ".";
+
+		int firstSlide = rand() % slideshow.size();
+		int secondSlide;
+		do
+		{
+			secondSlide = rand() % slideshow.size();
+		} while (secondSlide == firstSlide);
+
+		if (secondSlide < firstSlide)
+		{
+			int firstTemp = firstSlide;
+			firstSlide = secondSlide;
+			secondSlide = firstTemp;
+		}
+
 		vector<vector<image>> newSlideshow = slideshow;
 
-		swapSlides(newSlideshow, rand1, rand2);
+		int currentScore = evaluateNeighbourSlides(newSlideshow, firstSlide, secondSlide);
+
+		swapSlides(newSlideshow, firstSlide, secondSlide);
+
+		int newScore = evaluateNeighbourSlides(newSlideshow, firstSlide, secondSlide);
 
 		generation.push_back(newSlideshow);
-		generationScores.push_back(valueSlideshow(newSlideshow));
+		generationScores.push_back(initialScore - currentScore + newScore);
 	}
+	cout << endl;
 
 	return generation;
 }

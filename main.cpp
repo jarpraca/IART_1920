@@ -224,14 +224,15 @@ void chooseAlgorithm()
                 vector<vector<image>> slideshow;
                 orderImages(images, slideshow);
                 int initialScore = valueSlideshow(slideshow);
-                cout << "\nInitial Score = " << initialScore << endl;
+                cout << "\nCalculating inital score..." << endl;
+                cout << "Initial Score = " << initialScore << endl;
                 auto ti = std::chrono::high_resolution_clock::now();
                 int finalScore = hillClimbing(slideshow, numIterations, initialScore);
                 auto tf = std::chrono::high_resolution_clock::now();
                 cout << "\n\nInitial Score = " << initialScore << endl;
-                cout << "\nFinal Score = " << finalScore << endl;
+                cout << "Final Score = " << finalScore << endl;
                 auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
-                cout << "Time Execution = " << duration << " seconds" << endl;
+                cout << "\nTime Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 2:
@@ -245,14 +246,15 @@ void chooseAlgorithm()
                 chooseTemperature(temperature);
                 orderImages(images, slideshow);
                 int initialScore = valueSlideshow(slideshow);
-                cout << "\nInitial Score = " << initialScore << endl;
+                cout << "\nCalculating inital score..." << endl;
+                cout << "Initial Score = " << initialScore << endl;
                 auto ti = std::chrono::high_resolution_clock::now();
                 int finalScore = simulatedAnnealing(slideshow, temperature, numIterations, initialScore);
                 auto tf = std::chrono::high_resolution_clock::now();
                 cout << "\n\nInitial Score = " << initialScore << endl;
-                cout << "\nFinal Score = " << finalScore << endl;
+                cout << "Final Score = " << finalScore << endl;
                 auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
-                cout << "Time Execution = " << duration << " seconds" << endl;
+                cout << "\nTime Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 3:
@@ -265,14 +267,15 @@ void chooseAlgorithm()
                 chooseNeighbourhoodSize(numNeighbours);
                 orderImages(images, slideshow);
                 int initialScore = valueSlideshow(slideshow);
-                cout << "\nInitial Score = " << initialScore << endl;
+                cout << "\nCalculating inital score..." << endl;
+                cout << "Initial Score = " << initialScore << endl;
                 auto ti = std::chrono::high_resolution_clock::now();
                 int finalScore = tabuSearch(slideshow, numIterations, numNeighbours, initialScore);
                 auto tf = std::chrono::high_resolution_clock::now();
                 cout << "\n\nInitial Score = " << initialScore << endl;
-                cout << "\nFinal Score = " << finalScore << endl;
+                cout << "Final Score = " << finalScore << endl;
                 auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
-                cout << "Time Execution = " << duration << " seconds" << endl;
+                cout << "\nTime Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 4:
@@ -284,16 +287,17 @@ void chooseAlgorithm()
                 choosePopulationSize(populationSize, numGenerations);
                 orderImages(images, slideshow);
                 int initialScore = valueSlideshow(slideshow);
-                cout << "\nInitial Score = " << initialScore << endl;
+                cout << "\nCalculating inital score..." << endl;
+                cout << "Initial Score = " << initialScore << endl;
                 auto ti = std::chrono::high_resolution_clock::now();
                 vector<int> generationScores;
                 vector<vector<vector<image>>> generation = createInitialGeneration(slideshow, generationScores, populationSize);
                 int finalScore = geneticAlgorithm(generation, generationScores, numGenerations);
                 auto tf = std::chrono::high_resolution_clock::now();
                 cout << "\n\nInitial Score = " << initialScore << endl;
-                cout << "\nFinal Score = " << finalScore << endl;
+                cout << "Final Score = " << finalScore << endl;
                 auto duration = std::chrono::duration_cast<std::chrono::seconds>(tf - ti).count();
-                cout << "Time Execution = " << duration << " seconds" << endl;
+                cout << "\nTime Execution = " << duration << " seconds" << endl;
                 break;
             }
             case 0:
