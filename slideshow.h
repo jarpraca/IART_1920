@@ -31,9 +31,9 @@ bool swapPhotos(vector<vector<image>> &slideshow, int firstSlide, int secondSlid
 int simulatedAnnealing(vector<vector<image>> &slideshow, double initialTemperature, int maxIterations, int initialScore);
 bool evaluateSA(vector<vector<image>> &slideshow, double &temperature, int &scoreDiff);
 int tabuSearch(vector<vector<image>> &slideshow, int maxIterations, int numNeighbours, int initialScore);
-vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slideshow, queue<vector<vector<image>>> tabuList, int numNeighbours, int &scoreDiff);
-bool findInTabuList(vector<vector<image>> slideshow, queue<vector<vector<image>>> tabuList);
-bool areSlideshowsEqual(vector<vector<image>> slideshow1, vector<vector<image>> slideshow2);
+vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slideshow, queue<vector<vector<image>>> &tabuList, int numNeighbours, int &scoreDiff);
+bool findInTabuList(vector<vector<image>> &slideshow, queue<vector<vector<image>>> tabuList);
+bool areSlideshowsEqual(vector<vector<image>> &slideshow1, vector<vector<image>> &slideshow2);
 vector<vector<vector<image>>> createInitialGeneration(vector<vector<image>> &slideshow, vector<int> &generationScores, int populationSize);
 int geneticAlgorithm(vector<vector<vector<image>>> &generation, vector<int> &generationScores, int maxGenerations);
 vector<int> roulleteSelection(vector<vector<vector<image>>> &generation, vector<int> generationScores);

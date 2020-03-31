@@ -294,7 +294,7 @@ int tabuSearch(vector<vector<image>> &slideshow, int maxIterations, int numNeigh
 /**
  * Generates a determined number of neighbour solutions of the one received and chooses the one with the best score.
  */
-vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slideshow, queue<vector<vector<image>>> tabuList, int numNeighbours, int &scoreDiff)
+vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slideshow, queue<vector<vector<image>>> &tabuList, int numNeighbours, int &scoreDiff)
 {
 	vector<vector<image>> bestNeighbour = slideshow;
 	int initialScore, newScore;
@@ -327,7 +327,7 @@ vector<vector<image>> generateNeighbourhood(vector<vector<image>> &slideshow, qu
 /**
  * Checks if a slideshow is in the tabu list.
  */
-bool findInTabuList(vector<vector<image>> slideshow, queue<vector<vector<image>>> tabuList)
+bool findInTabuList(vector<vector<image>> &slideshow, queue<vector<vector<image>>> tabuList)
 {
 	while (!tabuList.empty())
 	{
@@ -342,13 +342,12 @@ bool findInTabuList(vector<vector<image>> slideshow, queue<vector<vector<image>>
 /**
  * Checks if two slideshows contain the same images in the same order.
  */
-bool areSlideshowsEqual(vector<vector<image>> slideshow1, vector<vector<image>> slideshow2)
+bool areSlideshowsEqual(vector<vector<image>> &slideshow1, vector<vector<image>> &slideshow2)
 {
 	for (int i = 0; i < slideshow1.size(); i++)
 	{
 		if (slideshow1.at(i).size() != slideshow2.at(i).size())
 		{
-
 			return false;
 		}
 
