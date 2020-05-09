@@ -1,0 +1,1001 @@
+1000
+V 3 t47 t82 tl2
+V 13 tw3 t05 t02 tz4 tq2 tl2 t87 tc4 t86 t6 t46 th4 tb5
+V 4 tx1 tm2 t47 tm5
+H 5 t53 th4 tq2 td2 tq6
+H 3 tw3 t82 ts2
+H 12 tz6 tw3 t01 t6 t87 tx2 tb5 tp6 td4 tr5 tq2 tz5
+V 3 tr2 t86 t02
+V 9 t85 tv4 t87 t72 tg2 tq6 td4 tc4 t51
+H 10 tp tb5 t53 td4 tc5 t47 tw5 tw6 th6 tp2
+H 15 tp tj5 tl2 tr5 ts2 t34 t6 tw5 t91 t52 t87 tq1 tc5 th4 tz5
+V 8 th6 t52 tc4 t53 tp6 tr3 tw5 t01
+V 14 tp2 tq6 t52 tz2 tl tm2 tn6 t32 t6 t02 th6 th4 tq1 tw3
+H 16 ts4 t47 t04 tn6 tb6 t41 tq6 t05 th4 t93 tp6 tf1 tw3 t34 tz6 td4
+V 17 tp3 t31 tn6 t01 tm2 tq1 tj5 t93 tq2 tf1 t47 t87 tn3 tz6 tl5 tb6 th4
+V 5 tv4 t37 t86 t91 t2
+H 5 tn6 tw5 t6 t53 tc5
+V 10 tf1 td4 tq6 t87 tm2 th5 tc4 tc5 t85 tz6
+H 16 tm t87 td4 t86 t82 tl5 t6 tx1 tn6 td1 t75 tr2 tj4 tk5 tm2 t53
+H 13 t86 td4 t12 t85 tw5 t93 tz2 th6 tq1 tc3 t02 t87 tr5
+V 10 t52 tz4 th5 tb5 t85 tz6 t61 t86 tb7 th
+V 13 tc2 tm2 tc5 tf4 t95 tf1 t85 tq2 tz4 t87 t61 td4 tz6
+V 14 tc5 tk3 tr5 th4 tq1 t22 tw5 tp6 th5 t86 t53 tl5 tb7 tq2
+V 9 t01 tz5 tf1 t61 tx2 tz6 t86 t42 tb5
+H 9 tq1 tb5 tz6 t6 tr6 t74 tm tq2 tb7
+V 13 t01 t44 t85 th6 t61 tf1 tr t34 tx tw3 t82 t22 tr5
+V 7 tl t86 tw5 tz6 th4 t85 td4
+V 12 ts2 tx4 tb5 t56 t86 tp1 tc5 tr2 t93 tb7 tf1 tw3
+H 13 t05 tl5 tp2 tp6 t53 t94 tz5 t34 td4 th5 tv4 tf1 tc4
+V 3 tl3 tq6 tf2
+V 12 t53 t01 tq6 tl5 t82 t02 t44 tw3 th6 tj5 t85 th5
+V 9 tc4 tc5 t62 th6 t87 tl5 tq1 t32 tq2
+V 18 tf2 tw5 tq2 tl5 tx1 tz tk5 ts2 tp6 tc5 td6 tc1 tf4 tb7 t87 tn3 tp2 t82
+H 17 tw3 t01 t86 t6 t72 tm2 tc tq1 t02 tm5 t82 tl5 td4 tb5 th6 tx1 tz4
+V 6 t87 tp2 t85 t22 tk3 t01
+V 6 tc4 tq1 t82 t83 t52 ts4
+V 16 t02 tc5 t91 t74 tq6 t37 t87 td4 tf1 tl5 tj5 t34 th5 t31 t53 tr2
+V 3 tp1 tc4 t87
+H 15 tc4 t6 tx1 tp6 t82 th6 tr1 tn6 th4 tw3 tk5 tz2 tq1 t05 t85
+V 13 tp2 tr1 th6 tq1 tl2 tz6 tb5 tl5 t34 tw tq2 t82 tc5
+V 3 tq1 t6 tw3
+H 15 tb1 tq3 tj4 tb5 tn3 t33 t47 td6 t34 tk1 th6 tq2 t51 tz4 tl5
+V 15 t52 tc t02 t85 t93 tb7 tn6 tb4 tw4 tx th4 tf tq1 tj4 tz4
+H 13 t05 tl5 t82 tb5 t34 tq6 tf4 tr6 tc4 t86 tf1 tp2 t6
+H 17 t47 td4 t22 tx t87 t34 tq6 t82 th5 t85 tz6 tr2 tx1 t15 tv4 tm6 tl3
+H 8 tx1 tf tk4 tc3 tr5 tq1 tb5 tc5
+H 5 tc4 tr5 tl5 t91 tz2
+H 6 tf1 t34 tv2 tb5 t4 tk5
+H 7 t76 tp6 t01 tm2 tf tp2 tc5
+H 12 td1 tq4 tc4 tm5 tz6 tr2 tz4 td2 tb4 tn6 tm2 tq1
+V 13 tf1 tn5 tw3 tl1 t47 tf4 tp2 tx3 tq2 tx tc4 t86 td4
+V 6 ts2 t82 tr2 td4 tv2 th5
+H 9 t34 tj4 tw6 tq6 tq2 t82 t02 td2 td4
+H 15 tr5 tl5 t34 tq2 t01 tr2 t94 t56 tx1 tq1 tp6 tj5 t53 tb7 t87
+H 5 tm th5 tq6 tp6 tz6
+V 4 t01 tq6 t52 t37
+V 14 t44 tq1 tr5 tl5 tz4 tf1 tj4 tv t31 th6 tq6 tm t82 tx1
+H 17 t52 t47 ts2 tq2 tx1 t01 tc1 tp6 t51 t05 tk5 tz2 tc5 t74 tm2 tz6 tz4
+V 14 ts4 t05 tb5 tq3 t52 tw3 t61 tf2 t87 t6 th tp6 tc4 tz2
+H 14 tl5 tc5 t05 tw5 tp2 t61 tf t53 t01 tx1 t47 tm2 tw3 tq1
+V 17 tb5 tq1 tq6 tw5 t12 tr5 tn6 t05 tj4 tm tl5 tz4 td4 t6 tc4 t85 t03
+H 12 tz2 tc4 ts2 t86 td4 t01 tm2 tl5 t53 td1 tb7 t85
+V 8 t37 t87 tr5 t82 t47 tp2 t86 t53
+H 3 tq1 tq tz4
+V 10 t75 t34 tb5 tw5 t85 t31 td1 t05 tc4 tz2
+H 10 t95 tz6 t87 tf1 t85 tw5 tr5 t86 t02 tz4
+H 7 t75 tw3 tw5 tc4 t2 tf1 tp2
+H 17 tq3 tz5 ts2 tz6 tx1 tb5 td4 th6 t87 t57 tm2 t02 tp6 tr5 tq1 t85 t94
+H 13 t87 tb5 t47 td4 t33 th6 t05 t52 tl5 tq6 tl t01 tr5
+V 12 t82 th4 tp2 t12 th5 tz2 tf1 tl2 tr5 t01 tn6 tq1
+V 5 tr5 th4 t31 tm2 tp2
+H 13 tb5 t94 ts2 tq6 t02 t22 tw5 tj4 tf1 tv4 td2 tr2 tx1
+H 15 tz4 tj5 tf1 t82 tb1 t86 tq2 tz5 ts2 tv4 tr5 t47 t05 t34 tm2
+V 4 tr5 t34 tq6 tq1
+H 16 tz t53 t34 tw3 t72 t91 t47 tn6 tp6 t86 tl5 tm2 tq3 tw6 tl3 tb7
+V 5 tw5 t53 t86 tc5 tz4
+V 7 th4 t85 tw3 tx1 tb7 tk5 td1
+H 13 t17 tb5 tm2 tx1 t52 t51 t03 tz tz4 tj5 ts3 tq2 tz6
+V 10 tq2 t02 th5 tz6 t05 tb1 tc5 t91 tz5 t52
+V 10 t56 tb1 tn6 th5 tf1 tc5 tq2 tp3 t93 tb7
+H 6 t34 t86 tc5 tz6 tb7 tq2
+H 17 tp2 t01 tx2 th6 tz6 t13 t47 tk3 tb5 t86 th5 t02 t82 tp3 tr5 tz5 tw3
+H 3 t47 t01 tv
+V 11 tn3 tq2 tc4 tb5 t47 tz4 tn6 t02 tc5 t56 t85
+H 5 t8 tc5 tq6 t86 tw3
+V 12 tp6 tz2 th5 tf2 t6 th4 tf1 tw3 t31 t42 tz tp2
+H 9 tw3 t53 t02 tq2 th6 tz6 t6 tv4 tm5
+V 13 t12 tg2 th4 tx tb5 tn6 t37 tv3 tr6 t31 tf5 tx1 tz2
+V 4 tc4 tq2 tn6 t65
+V 15 t85 tm2 tb7 tz4 tp6 ts2 tn6 tv2 tr5 t47 t34 tx1 tj5 tz6 tc4
+V 4 tz4 tz2 tq2 t22
+H 10 tl1 t86 tb5 td4 t47 tr2 tb1 tq6 ts1 tw5
+H 14 t85 tc4 tp4 t53 t86 tw4 tm t34 th5 td6 tm2 t01 td4 th4
+H 18 tr5 t95 t74 t47 tm2 tz5 tp6 tq2 t53 tc tn6 t86 tf1 ts2 tj4 tw3 tq6 t12
+V 16 tc4 tw tp2 th6 t02 tm2 th5 tf tr5 t47 t86 tp6 tn6 tc2 tl5 tc
+V 16 tp6 tf4 tw tz5 tw3 td4 t91 t85 t47 tz4 tz6 t82 ts2 t02 t42 tz
+V 10 th4 t86 tx5 tw2 tk1 tz6 tc4 th5 tl3 t37
+H 8 t34 t02 t91 th4 t52 tq6 tb1 ts2
+V 14 t86 t73 t93 tz4 tz2 tm t01 t82 tl5 t42 t53 tp2 t47 tf4
+V 4 t86 tm2 tz5 tk5
+V 11 tw3 tq1 t87 t52 th6 tl5 tz2 tk1 tf4 td4 t82
+V 18 tr6 tk1 t87 tp1 tv4 tq2 td4 tj3 t53 tw3 tp6 tz2 tq1 t86 t37 t82 tz6 tt5
+V 9 t33 tc tx1 t52 tx2 t85 tx4 tq1 ts2
+V 17 tv4 tz2 tv6 tc5 th6 tx2 td1 tp2 tc4 tb5 t86 tq1 t05 tq6 tm tm2 t85
+H 5 t82 t52 tp2 tx1 tz4
+V 8 tp6 tr5 tk1 tf1 tw5 tn3 t56 t47
+V 13 td4 tz6 t56 tb5 t6 tb1 tp1 tv4 th5 tp6 t34 tw5 tm2
+V 3 t85 tn6 tf5
+V 6 tq6 th6 ts2 t31 tr5 tp1
+V 18 tj5 th5 tr5 tm td4 tx tw5 t84 tm2 tv3 tb5 tw3 tx1 th6 t87 t85 tj4 tn6
+V 4 ts4 ts2 tf1 tz5
+H 7 th6 tw5 tq3 tr2 th tz4 tm2
+H 4 tw3 tq1 t52 tz
+V 15 tz4 t01 td4 tw5 tw3 tz6 th6 t31 t05 t34 tj5 tr3 tf tb1 tn6
+H 8 tp6 t05 tz4 tz6 th6 tm5 tx1 tm2
+V 6 tf1 t05 tz6 tw3 ts2 td4
+H 14 tn6 tb5 tk3 tk5 th5 tr5 tz6 t34 t91 tq3 t86 tn3 tq6 tf
+H 4 tc4 tl5 th6 t6
+V 8 th6 t34 tb1 tp1 th5 tl5 tw3 t62
+V 10 t01 t2 t53 t87 tm tw3 th5 tb7 tp6 t56
+H 9 tf2 t05 t85 td4 tc4 tf1 tq1 tz4 tc5
+V 10 tp1 tm2 th4 td4 t53 tq6 ts2 tl3 tc4 tx
+V 10 td2 t01 t34 tf1 t6 t86 tm2 tq1 th5 tb7
+V 7 t05 t53 th4 tz4 tq2 t02 tl5
+V 5 tl5 th4 tx4 tz4 t87
+V 14 tn6 tz tc5 t47 t87 th6 ts2 t85 t25 tb5 t52 td4 tx2 t15
+V 16 t53 t82 tp2 t6 tm2 t52 tr2 t94 ts2 tq2 tn6 tb5 tz6 tc4 t05 tf
+V 12 t05 tq6 td4 tm2 t91 td2 tf4 t47 th4 tq1 tw3 t52
+V 5 tq4 tz6 tl2 tp2 tp6
+H 15 tk3 t87 tz4 t85 tv3 td4 tf2 t86 tf1 t34 tk1 tc5 t02 tz6 tq1
+V 12 tm5 tp2 t47 th5 th6 t87 tb5 tz6 tl2 tz4 td t22
+V 7 tv3 t61 t85 t91 tc4 tv2 tl5
+V 3 t82 tq6 tw3
+H 11 tm5 tv6 tw5 t87 tc5 ts4 tk3 tz6 td1 t53 t86
+V 12 t25 tg6 t87 t34 tq6 t93 tf1 t51 tb7 tr6 tx2 tq1
+H 15 tn6 t87 tq6 th5 tq2 t86 t34 tp6 tw4 t47 tm2 t53 t02 t05 tq1
+V 16 tv4 tb7 tc5 tq6 tq1 t6 t56 tp2 tq2 tb5 ts2 t86 t01 tv t82 tw5
+H 9 t47 tl5 t12 tz2 t02 tc4 tm2 td tz6
+V 6 tz tr5 t47 t53 tw6 tc4
+H 6 tl5 tq2 t85 ts2 td2 tr5
+H 18 tp2 t91 t85 th6 tn6 tz4 tf4 tc5 tb7 tw3 th tx2 t13 tp6 tx1 tb1 t05 t72
+V 16 tq1 tz6 tm2 tn3 tw5 t73 th6 tc5 tp2 t02 t05 tf1 ts4 td1 tb7 t57
+H 3 tp2 tz6 tz
+H 10 tf1 tz4 t37 tp6 t82 tq1 tq6 t74 t05 t87
+V 4 ts2 t85 tj4 tz6
+V 5 tp3 th4 t95 t67 t82
+H 9 tm ts2 tc4 t87 tq5 tq2 tn6 tx tx4
+V 3 tq6 th4 t13
+V 13 tn6 t53 tb7 t85 t02 tc4 tq3 td4 tw3 tp6 t94 tq1 t01
+V 11 tx tw3 t86 t82 tb7 t47 tc1 t63 tz4 tq2 th4
+V 17 tw5 th5 tt5 tc4 tl5 t22 td2 tb7 t56 tp2 tf1 t82 tq2 tx1 tr5 t02 th
+H 14 th t53 tk3 tq6 tq1 tm2 tr3 tn6 tz2 tz3 td4 tf1 tc5 tw3
+H 3 t12 tz tq3
+V 14 t94 tn6 t47 t53 td4 tp6 tq1 tv4 tf tb7 t6 t86 tq2 tr5
+H 14 t05 tn6 th5 ts2 tq5 t93 t47 tw5 tw3 td2 tp6 th6 tf1 t94
+V 15 t87 tc4 t86 t85 th4 tm5 t46 tc1 tk3 tp2 t52 th5 t74 tx1 tj5
+V 12 tz5 tp1 tr5 t86 tw5 t01 t44 t82 tg6 tc4 tp2 tm2
+V 10 td tq6 tz4 t85 t34 th6 tl5 tb5 t47 th5
+V 7 tw3 tx tr5 tc5 tz6 tb t12
+H 12 tm2 tz2 tq1 t37 t87 tk1 t85 tl5 tq6 t47 tp6 tx
+H 10 tl3 t52 tx4 ts2 tl5 tb5 t01 tw3 tm2 td4
+V 12 tp2 tb5 td4 tg t05 tl5 tx1 ts2 tq1 tq3 t86 t53
+V 10 tl6 th6 tw5 t02 th4 tz6 t82 tn1 t53 t6
+H 13 t47 tb5 tq2 t44 tf1 tz6 tw3 t85 tl5 tz5 ts4 t6 t01
+H 5 t82 t74 t52 td5 tz4
+V 19 tj4 tf tz6 t6 tn6 t34 tc4 ts2 th5 t53 t52 tq6 tp2 td1 t82 tq2 t21 tb7 tl5
+V 11 t93 tw3 t05 tr2 tn3 tz2 t86 tc4 t52 td2 tl5
+H 17 tk1 tb5 tl5 tq6 tq1 tm tm2 tw6 tb7 tp6 tv3 tz6 tx1 t86 t56 t34 t42
+V 15 tx1 tw4 tm2 td4 ts4 t01 tw5 tn6 tb5 tp6 t87 t52 tb tl3 t82
+H 11 tw6 t61 t02 tz2 t85 tb7 tw5 tz6 th2 tc5 tq4
+V 16 t56 tc1 t37 tz6 tl5 t87 tf1 tz2 tk5 ts2 t01 t34 tp5 t52 tc4 t86
+H 12 tx1 tz6 tw3 tz2 th4 t52 tq6 tk1 t02 t82 tw6 t01
+H 6 t82 t91 tw5 tk3 t52 tc4
+V 7 tr6 tr5 tb5 tw5 ts2 t34 t01
+H 6 tn6 tz2 tz6 t34 tp6 t87
+H 15 tz2 tz th5 t87 tz6 tx1 th6 t01 t05 t85 t34 tx5 t52 tr5 tb5
+H 9 t94 tp6 tr5 tb5 t6 tv4 tq1 tw3 tf
+V 4 t02 tz6 tb6 tb5
+V 13 t85 tr5 t94 tc5 th4 ts2 t01 td4 tm5 tc tv1 t26 tb5
+V 12 t6 t02 tp6 tf2 t82 tw3 tz2 th5 t34 t85 tc5 tc4
+V 5 th5 tx1 t87 tp3 tf1
+V 10 tz2 tp6 td2 tx4 tr5 t02 tc4 tf4 t82 tz6
+H 10 tm2 t02 tw5 tv3 tf tz6 tp2 t01 ts tl2
+H 16 t47 tj4 tw tb7 tm2 tp6 t56 th5 th6 t55 tj1 tz6 tf1 t86 tw5 t02
+V 13 tz2 tl2 tc4 th2 tb7 t03 tl5 tv6 t13 tq6 t05 th4 tc
+V 3 th5 tf1 tl2
+V 4 t13 tp6 tb5 th4
+H 15 tf4 th5 tm2 t85 tl5 ts2 t05 tx1 t87 th4 tr5 t01 t62 tv3 t12
+V 11 tz6 tb5 t82 t34 t37 t01 t57 t6 tq3 tr5 tw3
+H 15 tc5 t6 tr6 th5 tv4 tp2 t63 tf1 t87 t01 tz2 tx1 tq2 tp6 t02
+V 12 tz4 t3 ts2 t01 t52 tz2 tp2 t47 tb t34 th3 tq1
+V 14 tr5 t85 t55 tm5 th4 tp2 tz2 tc5 th6 tc2 th5 tc4 th tm2
+H 15 t82 tm th6 t86 t37 tz2 t91 tw3 t73 tb1 t52 th5 tr6 t34 tc5
+H 3 t05 tf1 t82
+V 15 tn6 tv4 t51 t53 t87 tz2 tk3 t31 tz6 tp1 t71 th2 t47 tq2 tz4
+V 8 tb7 tl5 tc4 th4 tq5 td4 t47 th5
+V 11 td4 tr5 tq6 tl5 tv2 tm2 tz4 tk1 tw3 tx td2
+H 15 t86 th5 tw3 tn6 tc4 tj4 tr2 t02 tw5 t01 tn5 td4 t85 t12 tz2
+H 12 ts3 tm2 tr6 tb7 tr5 th6 t47 t05 tx1 tz4 t85 tv2
+V 14 tq3 tb1 td4 t86 t15 tc5 tr5 tp2 t34 tn3 tl1 t05 t01 tq6
+V 17 tb7 t05 th4 tx2 tb5 tf1 tx1 tz5 tn6 tr5 t85 t53 t93 th6 tl3 tl2 tq2
+H 13 tm2 tp6 t25 tc4 tz4 t75 tz2 td4 tc t02 tc1 tb5 t52
+V 10 tl3 t87 t52 tm2 td4 tw3 tz tr5 tp2 tz2
+V 10 tn6 td t52 tf1 tz2 tc4 tm5 t53 ts2 t31
+V 3 tq2 tb5 tm5
+H 15 tk1 tp2 t85 tp tq6 t6 t01 tm2 t86 td4 tq2 tz tb5 th4 tr5
+V 3 tx1 tw3 tb7
+H 7 th5 t6 tq2 tz2 td4 t87 tn6
+H 5 t86 tf4 t6 t02 tn3
+H 14 tx1 tx4 th6 tc5 tf1 tm2 tq6 t05 tj1 tv4 t31 th4 tz5 tv2
+V 12 tq2 t52 tk1 t05 tb5 tf1 tn6 tk5 th4 t86 tf4 t6
+H 12 t6 t01 t02 tq2 t86 t8 tj4 tb1 tq1 t82 tv th6
+H 12 tq1 tl2 tr2 tq2 tn6 tb tq5 tw3 tw5 t85 t52 tc2
+V 4 tf1 tl t47 tx1
+V 10 ts2 tz2 td4 t22 t74 tc1 th6 tp2 tx tl5
+H 8 t61 t87 t6 tp1 tx tc5 tw5 tm2
+H 10 tz4 tz2 t47 tr5 tb7 tl5 tm2 tf1 t34 tn6
+V 7 tr t53 th6 tr5 t91 tf2 t05
+H 12 tz6 tb7 t26 t85 tp2 tx4 tq1 tf1 t53 tb5 tq2 t52
+V 7 tw5 t87 th6 t85 tz2 th5 t37
+H 12 tk3 tr5 tx1 tb6 tz5 tq2 t34 ts2 tq3 th4 t87 tm2
+V 12 tc tw3 tf1 th6 tw5 tz2 tp2 tb3 ts2 tm2 tm6 tx1
+V 6 tz6 tx1 td4 tp2 t73 th5
+V 12 tr1 tn6 t47 tx1 tr5 t85 t31 th6 tb5 tj4 th5 t52
+V 15 t82 tq1 t8 t44 tc4 tq2 t85 tx1 t87 th5 t02 td4 tl5 tq6 t86
+V 17 t86 tb1 t87 t52 t53 t82 td4 t47 tb6 tq1 tc4 tc5 t37 tx ts2 tz4 th5
+V 12 tw5 tq2 th5 t47 tl5 tp6 tn6 t87 t52 tb5 tw6 t01
+V 17 td4 t34 tz4 tz6 t82 tj4 t6 tv3 t02 tl5 tb7 tq1 tm2 tz2 tk th6 tb5
+H 8 tv4 t47 t87 tx1 t34 tp2 ts2 t37
+V 11 tl5 tb7 th4 t05 t8 t01 tr5 tm2 ts2 t02 t6
+V 7 ts2 tr6 td6 tc4 tq5 td4 tp2
+V 9 th4 th5 tp6 tb7 tn3 t02 tb5 tc4 tr6
+V 16 tc4 tk5 tb5 tj6 tp th6 tb7 tl5 th4 tj1 tw2 t85 t01 t6 t52 t53
+V 9 tn6 t85 tz6 th6 tf2 t22 tf4 t53 t61
+H 11 t86 tc4 tf2 tc5 tl5 tm2 tb7 th4 tp2 tr1 t44
+V 12 t05 tn3 t85 th4 tq1 tl5 tb5 tq2 tf1 th6 tz6 tp2
+V 14 tw3 tm2 tw5 t86 th6 t85 th5 tj4 tp2 tv4 tx1 t34 ts2 t87
+V 7 tp2 tq2 tm2 t86 tz4 tw t05
+H 9 tw5 t57 t6 tb7 t02 ts2 tn3 td4 tl5
+V 12 t37 t05 t61 t86 tf1 tr5 t6 tn6 tp2 tz2 t47 t42
+V 10 tv t74 tf tx t82 tx1 t53 tz tn3 ts2
+V 16 t47 tw5 tq2 ts2 tb5 t94 tq1 t86 tp2 tr5 tx1 tc5 tl2 tb7 tf2 tn5
+H 5 ts2 t87 tr2 tp2 td1
+H 17 tz4 tr5 t86 tw5 th6 tf2 t01 td4 tl tf4 tp2 tq1 t22 t02 t82 tq6 tz2
+V 7 t87 ts4 t82 tn6 t44 th6 t93
+H 7 tr5 t85 t52 tf tp6 ts4 tq2
+V 8 t85 tz4 t01 th4 t73 tj4 t47 t37
+V 8 tw3 tp6 tz4 t6 tm2 tl5 td4 tk1
+H 17 t34 tq3 t73 tj5 td4 tn6 t31 tz2 tp2 t86 th4 t05 tz4 t02 th1 t12 t6
+V 14 t82 th6 tw3 t47 th t6 tr3 t51 t01 t86 tf t34 th4 tl5
+H 12 t93 tr2 t85 tp6 tz6 tz4 t61 tc5 t8 t05 tw5 tn5
+V 14 t02 th4 tb7 t53 t57 tz2 tn6 tl5 tl4 t05 tx4 tw3 t82 t37
+V 9 t01 tb5 tw th6 tp1 t91 tp6 t61 tm2
+H 15 t52 t05 tf1 t37 th6 t6 t86 tq2 ts2 tw3 tb5 t87 t53 tp6 t02
+H 10 tr5 th5 tc1 t47 tb6 tq6 tw6 ts2 tl3 tx1
+V 17 tw3 th5 tp6 tl5 tb5 t52 tc1 t6 t05 tp2 tz2 t8 tv2 tz4 tc5 t86 t47
+V 15 t34 tw6 tp2 tq6 tn6 tw3 tb7 tz2 tr5 t6 tb5 td2 tl5 t53 tl3
+V 16 t85 t53 tz4 tj4 th6 t02 t6 tb7 t52 tq2 tb5 tw5 tp2 tr3 tr6 tp6
+V 9 t8 tl5 tw3 t82 t37 t74 tb5 th4 t02
+V 15 tn6 t41 t05 tq6 th4 tc4 tb5 tz4 tf5 t82 tf1 ts2 td4 tm2 tn3
+V 13 t01 tz6 th4 t05 ts2 tq2 tt2 t34 tq6 t44 tc4 t6 th6
+V 2 th5 tz4
+V 13 tn6 tq6 t02 tz6 t42 tb4 tp2 tf4 t1 t12 tx t61 th4
+V 13 tb1 td4 tw3 th6 tf1 tw4 tk5 tz th4 tr5 t01 tp6 tb5
+V 11 tx1 t6 t61 t52 tq6 th6 tq1 td4 tf1 t01 t34
+V 17 tw6 ts2 t05 tx1 tz6 tl2 tc5 th6 tc4 tx tz4 t31 tq5 tb7 tn6 t47 tl5
+V 13 tz2 tr5 t52 tm2 t01 t94 tp6 tr2 t42 t37 t73 tc4 tb6
+V 4 tx1 tc td4 tz2
+V 9 tm2 tq1 tf tp2 t93 t22 tx1 tl1 t32
+H 5 tz4 tv1 t56 th4 tr5
+V 18 tv3 tw5 tc4 t82 tb5 t93 tn6 t34 tq1 t01 tw3 tc tx4 tq2 tz tr6 th6 t87
+V 17 t6 t05 t52 tw6 t86 tz4 t47 tw3 td1 t65 th4 tz tb7 tp2 td4 t02 t82
+V 17 th tz4 tw3 th4 tc5 tp tx1 tc4 t02 ts5 t44 tm2 tf1 tr5 th5 t34 t6
+V 9 tp2 t11 t31 tz6 tq1 tp6 tc5 t87 tz4
+V 8 t25 t82 t56 tw3 tn6 t31 tq2 tw2
+H 14 t34 tb5 tx tz6 th5 tm2 tz4 th t01 tj4 t85 tl5 tx4 tk3
+H 6 t47 tz2 tq1 tz tx4 t82
+V 14 t86 tq1 t94 tm2 t61 tr6 t05 tf ts2 tv4 tn6 tc t85 tw5
+V 5 tv2 tn6 tq2 tz5 tm
+V 8 th5 t52 t6 tr5 tw3 t86 th6 tz6
+V 6 tq2 tk1 tw5 tz4 t82 t86
+V 15 tx tw5 tq2 tc5 tb6 t53 tc4 th5 t01 tx1 tx6 tx4 t34 t87 tz4
+V 13 th5 tl t8 tw5 t53 t44 tz4 tp2 tz6 tn6 th6 t86 t6
+V 5 tb7 tz2 t86 tz6 tb5
+V 8 t47 tz2 tc4 tl th4 tf5 tq2 tf1
+V 5 td1 tr5 tw5 tb5 tw3
+V 5 tq2 tm2 t87 tc5 tc4
+V 13 t6 t01 t05 tl5 t75 ts2 tq2 tv3 tz2 tm2 tb tr2 tq1
+H 4 t74 tc4 td4 tv4
+V 10 tv3 tw2 tw3 tb5 tw5 tq6 tz2 tx2 t05 td4
+V 3 t01 tn6 tz6
+H 8 t22 tn6 tc4 t01 tx1 t34 tp6 tv3
+V 17 t02 tc5 t85 tb1 t55 tz5 tf tw5 ts2 tq6 tw6 t31 tp6 tl5 tr5 th4 t05
+V 14 tp2 tv2 tf1 t34 t66 tq1 tr6 t6 tc4 tp6 t87 tj4 tm2 t52
+V 12 t05 tb7 th5 tc2 tz2 tw6 t74 th6 tv2 tp2 tp6 t34
+V 10 tc5 tc4 t37 tq1 t87 t52 tq3 tn6 tf t47
+V 10 tf1 t53 ts2 th4 tl5 t57 tw5 t85 t93 tb5
+H 5 tf1 tl5 t47 tb5 tk6
+V 10 tr5 t02 tp6 tb5 t47 tm2 t37 t34 t82 tp2
+V 5 tb7 tz2 tp6 t6 tx4
+H 9 tz4 t61 tw5 tq1 tc4 tr2 tw3 td4 tq6
+V 13 tz2 tb2 tb7 tp6 t87 tx4 tr5 tb5 tf tc1 tw3 tm2 t6
+H 15 t02 tx2 td4 th6 th4 t34 tm2 t87 t47 td1 tw5 tq5 tf t1 t85
+V 9 tq2 tl5 tc th6 tz4 tw t52 t47 tp1
+V 11 t01 t61 tk5 tv3 tp6 tw3 tq6 tz4 tf1 tc4 tb7
+V 12 tz2 tx2 tq1 tq6 t72 tb5 t53 tp2 tr5 th5 tq2 tf1
+V 7 tc5 t82 tl2 tb5 t05 tq2 tz6
+V 11 tj5 t05 tz4 tn6 tb5 t47 tp2 tm tq1 t6 tz2
+V 10 tk5 t86 t03 t85 th tc4 t8 tq6 tz6 tq3
+V 10 tc1 th2 t05 td2 tn6 t82 t87 td4 t85 tq6
+H 17 t44 tc tq1 tr5 tn6 tb5 t01 tq6 t47 t34 tx1 th4 t53 t42 t74 th5 t82
+V 9 t85 t52 tz2 t05 tx1 t87 th5 t6 tq6
+V 13 tr5 t52 th5 tm2 tz4 tb5 td4 t53 tc4 tf1 t13 tx1 t34
+V 5 tf1 t82 th6 tl5 tq6
+V 13 t85 tp2 tm2 td2 tz tf1 tl5 t8 t05 tw5 tp6 t01 tq6
+H 6 tp2 tk3 td1 tm2 th3 tx4
+V 9 td4 th6 td tq2 tn6 ts4 tc4 t73 tc1
+V 13 tq2 t12 tl2 tc5 ts4 tm2 t94 t47 t22 tb7 tr5 t85 tz2
+V 5 tb5 t85 tc5 ts2 tr6
+V 5 t02 tb7 tm2 tv3 th5
+V 6 t86 th5 tn6 tc5 tq1 t34
+H 13 t86 tq6 td1 tw3 tn6 tz6 tw5 tc5 t05 t53 t73 tz4 t34
+H 6 tm2 tn3 t91 tq tl1 tq2
+H 15 tb5 tq2 tc4 t87 tv4 tz2 ts2 tw3 t52 t85 tb2 th5 t47 tr6 t94
+V 12 tp2 tz t6 td tl3 t01 th4 tz2 t34 tb tz6 tw3
+V 9 tw6 tx1 td4 tz6 t6 t41 t47 tq1 tv2
+V 9 t85 t86 ts4 tb7 tz6 tw4 t74 tn6 tr2
+V 14 ts2 th6 tf1 t55 tn6 t93 t52 tb5 t74 tq1 tc2 t73 tc1 tq2
+H 3 td4 tn1 tl5
+V 4 tw5 t93 tk3 tz6
+V 13 t01 tn3 td4 t47 tp2 tm2 tl5 tj4 t87 t34 tw3 tb7 tq3
+V 14 tm2 t6 th4 t42 tr5 t47 tl2 tc4 tw4 t86 th5 tn6 tj5 t26
+H 9 t87 tq2 td4 tx tb1 tp2 tl5 tx1 t53
+H 9 t52 t8 t82 t87 t01 t05 th5 tj5 t53
+V 11 tz4 tw5 tw t87 tv2 t72 tq2 t31 t86 tb5 tr5
+V 9 tf1 tq3 tc5 t47 tx2 t6 td1 tr5 tz6
+V 4 tc4 tb5 tx1 tp6
+V 10 tr6 tr5 t82 t02 tl5 tp6 td1 tn6 tc2 tq2
+H 5 tz2 tx1 tp2 tc4 t47
+V 6 tp6 tq4 t85 t74 tv2 tx
+V 7 tx1 t02 t53 tw5 tz tz4 t52
+H 12 tr2 t34 ts2 tm2 t52 t55 t82 tq2 tq3 tc1 tn5 tw3
+V 6 tm2 tb1 th tx t02 t6
+H 14 t02 t82 t56 t52 t86 t34 tc4 t87 tw5 t51 tp6 t6 t61 t05
+H 15 th5 tc5 tb5 t65 t47 tz4 tf tq3 ts2 t01 t53 tn3 t02 tp2 t56
+V 10 tn6 th5 tz6 ts2 t91 t31 t85 tk5 t47 tx
+V 13 t85 th5 t34 t52 t05 tj5 tl5 t42 t12 t8 tb5 t94 t01
+V 11 tx4 t47 ts2 tb5 t02 tv6 t53 tv3 tm2 t87 tw3
+V 11 tb5 td t86 t02 t82 tq1 tr5 t44 td4 tz6 t85
+H 11 tq3 t37 t86 t01 tv4 t34 t05 tb7 t85 tp6 t53
+V 12 ts2 tb1 tr5 tb5 td2 t85 t52 tw5 t32 t53 th5 tp2
+H 15 tc1 t53 tr2 tb5 tc5 t82 t31 tj5 tn6 t51 t85 t6 t93 t34 t42
+H 11 t85 tq1 tl t41 tc4 t52 tp6 tq6 tc t53 tj4
+H 11 ts4 tc6 t73 t74 tn6 t61 tl5 tc5 th4 tb1 t6
+V 13 t6 t22 ts2 tm5 tw3 t85 tl5 tc1 tj5 tq1 t55 tx4 tn3
+V 11 tn6 t82 t34 tc4 t05 tw3 ts2 tr2 t47 t44 tl5
+V 10 tz2 tf4 tq2 tx tz6 tx1 t86 t47 t56 tw5
+H 12 tq4 tf1 tn3 t85 tq6 ts2 tc5 t82 t65 tw3 tq2 t47
+V 5 tc4 th5 t01 tq2 tn3
+V 15 t02 th4 t05 tq1 tw3 tm2 tc4 ts2 tr6 tz6 tb5 th5 tq5 tj5 tp6
+V 9 tn6 t53 t47 tz6 tw6 tz5 tc tf2 tx1
+H 7 ts2 tz2 t46 tq2 th5 tf1 t87
+V 13 tn3 tq2 td1 tn6 tp2 t51 tl5 tb1 tv2 th5 tw4 tz2 tq
+H 4 t65 td1 th4 tc4
+V 3 tf tq6 t85
+V 13 t6 tq6 tz2 tw5 t52 tf2 t05 tq3 tx5 t47 t82 tr5 tz4
+V 7 t82 t47 tp2 tc5 t01 tm2 th6
+V 5 t53 tl5 tq6 t47 t82
+V 3 t01 t47 t07
+H 19 tx1 tp2 tr5 t85 t01 tc4 t82 tx4 tw5 tc1 ts2 tc5 tq2 t61 tb1 th5 tw3 t34 tz2
+H 8 t05 tl3 t82 tk1 tz2 tm2 tc5 tf1
+V 14 t82 tf1 t02 tc5 th6 tq2 tw5 t6 ts2 t56 tp6 tb5 th5 t47
+H 8 t82 td4 tx1 tx4 t61 t52 td1 ts2
+H 8 tn6 td1 tq5 t8 tv4 t87 tz4 tq1
+H 16 tv6 tq1 td1 t01 tc5 tb t47 tl5 t02 td2 t34 tb5 tq6 tc4 tm5 tp6
+V 11 tk3 t42 tw6 t47 th4 tz2 ts2 t53 t01 tx1 t55
+V 5 th5 tr5 tq6 td2 t12
+V 7 t82 tj6 tp6 t31 t86 tc5 tb5
+V 17 t55 t82 tw3 tz5 tf tn6 tp2 th6 t02 tq3 t53 tq1 tc5 tl5 td4 th4 t74
+V 16 tl2 th4 t52 tq1 tl5 td4 t82 tc4 tq2 th6 tn6 t93 t85 tb5 tp6 t91
+H 8 t53 ts4 t05 t85 tr6 t12 tk5 t87
+V 13 t87 tw5 th6 t57 tv4 t52 tr2 tq1 t01 t05 tx1 tl3 tm2
+V 9 th5 tf1 t01 tv3 tc4 t3 t8 t05 ts2
+V 4 tw5 t8 tr2 t52
+H 9 t47 tz2 tx1 tl5 tp2 t31 t44 tc1 tf1
+H 6 tv3 t87 t93 tp2 tq3 tq4
+V 12 t94 tq6 t85 tr5 t86 th5 tp2 t82 t61 t87 t34 t74
+H 5 tz2 t05 t57 t74 tq6
+V 15 tr5 th4 tn6 t02 tf th6 tz2 tx1 t86 t75 tc5 tp1 t24 tb7 t1
+V 15 t12 t91 tz t86 tp6 tx4 tc1 tx5 tq2 tc5 t82 tn6 tp2 tm2 ts4
+V 13 tb5 t05 tl5 t6 t87 tz4 t74 tm2 tp2 t02 tk1 t22 tc5
+H 15 tw3 t37 t42 tj1 th4 t52 t87 tl5 tk1 t01 tn6 t84 tf2 tl1 t05
+V 10 tr5 tf tq3 tn6 th4 t82 t02 tb7 th6 t86
+V 13 tz tw5 tb1 t05 tn6 ts2 tr5 t82 t56 t86 tp6 t8 tx2
+V 18 tp6 tp2 tc4 tr3 tg tw5 t01 t05 tz2 t6 tb5 th6 th5 ts2 t86 t87 t61 t46
+V 11 tz4 tw3 tr3 th5 tq4 ts2 t82 tv4 th2 tx1 tw5
+V 13 tc4 tx1 t6 tp t87 tp2 tb5 tq1 ts2 t82 t37 tg tf2
+H 13 tf1 t01 t36 tz4 tc5 tb5 t02 tv3 t61 tw3 t87 tw5 t52
+V 8 t01 t05 tl3 tf4 tb7 tm2 tp2 th5
+H 11 tx1 ts4 tf1 th6 tw tp2 tn6 tp1 t52 th4 t93
+V 8 t44 t57 tn6 tq6 tz4 t87 tc4 t52
+V 12 tn6 tc tw3 t91 tv4 t94 t05 tz2 t85 t47 tb7 t52
+H 9 t02 t34 tl5 t74 th4 tp2 t86 tp6 t05
+V 9 t6 t47 t32 tt4 tc5 tx4 tn6 t02 tz2
+V 8 tl5 t62 t21 tn6 t85 tq2 t02 t94
+H 12 t86 tz4 ts2 t34 tn6 t82 t61 t02 tq6 tq2 t53 tp6
+V 5 t53 tq1 tp2 td4 ts4
+H 6 tc4 tx1 tq1 ts4 t94 td1
+V 13 td4 tq6 t6 tw3 tb5 tl5 t85 tf1 th6 ts2 t86 tl tc4
+H 11 t6 t87 tl5 tx1 tw6 tz2 t86 tv3 tc5 tm2 tw3
+H 5 t87 t3 tz2 td4 td
+H 13 th4 tx t53 t02 tp2 tk1 t6 tj4 t82 tw5 ts2 tq1 t87
+V 7 tp2 th5 tl5 td1 td4 tb5 tm
+V 5 tq2 th4 tm2 t52 tq1
+H 3 tw5 t02 tz2
+V 14 tz6 td4 th6 tc5 tq2 t05 tx4 tq6 t85 th tv4 t01 t47 ts2
+V 9 tc4 tw3 t31 tq1 tl5 th5 tx4 tc5 t87
+V 5 tb5 tz6 t82 t87 tr2
+V 15 tk3 t53 t52 td2 tc5 tr2 tp2 t82 td6 tm2 tq3 td4 t34 tq1 t85
+V 9 th5 t8 t05 tx4 t87 tl5 tp6 t34 tf1
+H 6 t85 t02 tw5 tf1 tx2 tz2
+V 13 th4 tf4 t41 t05 t31 tr2 tq3 tc4 t01 t52 tq2 tw tr
+V 16 t87 tx4 t51 tm2 tw5 tc4 t05 t85 tx t02 th5 t01 t34 tm tz6 tq1
+V 12 tw3 ts2 tq6 tl2 tz2 t8 tb1 t05 tm tw5 tq2 tz6
+H 17 th4 tw5 tc5 tk5 t72 t94 tf4 tw4 td4 tz2 t05 tx4 t53 tm tp6 t87 tq6
+V 13 tr5 t05 th5 tz4 tw3 tf1 t87 ts2 tj6 tn3 t52 tq2 tm2
+V 9 td4 t53 tl5 tc4 t47 t56 tw3 ts4 t82
+H 4 tr5 tj5 tz th5
+H 19 t56 tc2 t6 t86 tf1 tk3 tz2 t82 tx2 tr5 t31 tn5 tq2 tw5 tc1 tz tp2 tq6 tz5
+H 15 tm6 t6 t53 t56 t47 t51 t22 tb6 tl3 t52 tc4 tz2 tr5 t75 t87
+H 14 t01 tq6 t86 tb6 tb5 tj5 tl3 t52 tq2 tx tc1 t63 tz6 t85
+H 3 tc1 tc5 tp3
+V 6 tp1 th5 td4 tc5 t53 tl5
+H 10 t86 tj5 t53 t87 td4 tz4 tq1 tw3 t47 t01
+H 7 tc4 t93 tr5 tp1 tq6 tb7 t02
+V 4 tq1 th6 t01 t53
+V 5 tb7 tc1 tz6 th5 tf1
+V 8 tc5 tm2 t47 tb5 tr5 tn6 t6 th4
+H 3 tp2 tq1 tq6
+V 11 t01 t56 t44 tv2 tc4 t53 t15 t51 t22 tw5 t47
+H 11 tq2 t86 tl3 t52 tp2 t61 t31 tc5 t02 tf t75
+V 13 tz6 tc4 th4 t56 tf tq1 t8 t47 tq2 tv2 tb5 td4 t05
+V 14 tp2 tp6 t86 ts2 th4 t02 tj4 tb1 tw5 t82 t34 t47 tx5 tq1
+V 4 t05 th6 t01 tm2
+V 12 tc5 t01 t67 t55 t52 t42 tn3 tx5 td1 tj6 t47 td4
+V 14 th4 tn6 tn5 t25 td4 ts2 tz6 t85 t02 tq2 t05 tw5 tq1 t44
+V 6 tr5 t87 tw3 tq2 t52 tq1
+V 11 t05 tp6 tw5 th4 tc5 tp2 ts2 t87 t53 t52 th1
+V 14 t01 tz2 t94 tx2 t86 tl5 tf1 t05 t82 tn3 tr5 tp6 tk1 t85
+V 10 t02 tf1 tm2 t72 tl td2 tc th tz2 th6
+H 12 tc5 tl t86 tq6 t6 t37 tl5 tx1 tp6 th5 t05 tp2
+V 10 t3 th5 t65 t86 td4 t34 tl4 t87 th4 t6
+H 17 t55 t2 td4 th tp1 tk3 tp2 tw3 th5 tq6 tc tr1 t34 tv2 t74 tm2 t6
+V 12 tb7 t34 tz5 ts2 t53 t61 t82 tm2 tq1 tp1 tb5 tw5
+H 17 td1 t47 th tn6 tm2 t31 tq3 tr3 t12 tb5 t6 tp2 th4 t44 t82 t02 tc4
+H 3 th6 tq6 t87
+V 6 t51 tw3 tx tg tq2 tq1
+V 13 t47 tf4 tz6 t01 tb5 tw1 tx1 tl5 tf1 ts2 tz t41 tq2
+V 3 t34 td4 t52
+V 11 tr5 t47 tw2 t34 t82 t94 tq2 t87 t53 t86 tp1
+V 11 t01 tm2 t86 t02 tq6 t31 tw3 tp2 t37 tb6 th5
+V 4 t53 tm5 tz2 t01
+V 5 tw4 tq2 t85 tw5 tb
+V 15 th5 tz2 tf1 tm2 tw5 t13 tk3 th6 tw3 t85 tp6 tk1 t01 tq4 tw6
+H 15 th4 tp6 tz6 t86 tz4 th6 tz2 t02 t82 tw3 ts2 tc5 tf3 t05 tq1
+H 13 t74 tq6 th5 tq1 tk3 tz4 t53 tz6 tw3 t85 tp6 tc4 t34
+V 3 t31 td4 t05
+V 17 t82 t47 tc5 t26 t32 tk4 t46 tz6 tr5 t94 tl5 tf1 tp1 tb5 t44 tw3 t02
+H 17 tm2 ts2 tn6 tq6 th4 t34 tn3 td4 tb1 th5 tb6 t6 tc5 tp6 tq2 tr5 tl
+V 5 ts2 th4 tb5 tc5 tl5
+H 5 t51 tg1 t87 ts2 tk3
+V 16 ts2 t22 tl1 tk1 tf t41 td4 t82 tp tr5 tf4 tw3 th6 tx4 tc4 tz2
+V 12 t05 tx tx1 t34 tf1 tb7 t26 th tr1 t51 tw3 t53
+V 3 tk1 th4 tc4
+H 3 tp6 tb5 t61
+V 10 td4 tb1 tx2 tz6 ts4 t52 t87 t03 t86 tp2
+V 6 tp6 t82 tb5 th5 tq2 t93
+V 10 tn3 tr2 tr5 t94 tx5 t86 tz2 t05 tz tb5
+V 4 t53 tv4 tf1 td4
+H 14 t87 tn3 t34 tp6 tc4 t76 t52 tq1 tq2 tq6 tw6 tw2 tn6 tl5
+V 13 ts6 tk3 tp5 t22 tw5 tj2 td1 tb5 tv2 tn tr6 tx t87
+H 16 tc1 tz4 tc4 tm2 tk5 t74 tn3 th4 tx td1 tc5 tp2 tn6 t05 tr5 t47
+V 7 t26 tj4 th5 td2 t47 t41 tp6
+H 10 t42 th6 tn3 tc4 tx4 tl5 td4 tz6 tq2 t61
+V 4 tx2 tq3 tl5 t82
+V 9 tb1 tp2 tq3 t37 th tw5 tz2 tl5 t53
+V 13 t52 t85 tw5 tl2 tm tq1 t6 t87 th5 td4 tp6 tp2 tz6
+H 4 t34 tn6 tq2 t52
+H 4 th4 tx1 tq1 tf1
+H 3 ts2 tx1 th6
+V 10 tc4 tz2 th td4 th6 t47 tf1 tp6 th4 tq6
+V 14 tz6 t05 tc4 t47 tn6 th6 t01 tw4 tq6 tb5 th4 tq3 tx1 t6
+H 5 t47 t53 tp2 tv3 tl2
+H 5 t74 tq2 tx1 tj4 tk1
+H 12 td4 tk5 t21 tm2 tm t34 tb7 tl5 tb5 t47 ts2 t02
+H 13 th4 t01 ts2 tc1 tl5 t87 tm2 tr5 tf1 tz6 tp2 tc5 t52
+H 8 tx1 th4 tq6 t34 tf1 tj4 tc5 th6
+V 11 td4 tb7 t34 tb2 tb6 tb5 t02 td2 th6 tw5 tp2
+H 9 tz4 tw5 tc4 tn6 t37 t51 tz6 tc1 tf1
+H 16 t53 tp6 tf tn6 tl3 th6 t12 ts2 t47 tl t05 tf4 tm2 t86 t52 th5
+V 10 tr5 tl tq1 t47 tg6 t87 tt3 t22 tw5 tz2
+V 4 tw5 tq6 t56 td4
+V 3 t3 tx5 tw5
+V 11 th6 t86 td2 t8 t95 t34 th4 t82 tm2 t56 t72
+H 15 t44 tv2 tc6 tf1 tz2 tc5 tn6 th6 tp2 t01 tq6 ts2 t86 t53 t85
+V 12 t05 tq2 t86 t6 tr5 tp6 tj6 t01 t51 tb5 t61 tp1
+V 6 td4 tq6 tz6 t05 td1 t86
+H 13 ts2 th5 tx tv4 t52 tq1 tx4 tc5 t03 tn6 t82 tq2 tx2
+V 10 tj4 t52 tr5 t01 tq1 tz2 tz t8 tw3 tq6
+V 5 tz5 t22 t05 t13 tf1
+H 10 t34 tf1 tz4 tz6 tw5 tr5 t47 t53 th4 tn6
+H 9 t85 tq1 tb5 tq6 tz4 tr5 t47 tx1 t53
+H 12 t47 tz4 tb t87 t85 t82 tp2 tr5 tw5 t53 tn6 t52
+H 16 tz tb5 th4 t52 tk3 tc4 tj4 tf t55 t47 th tc3 tq1 ts4 t01 t86
+H 17 t01 tc4 tc3 tb5 t6 tw5 tn6 tx1 tq3 tk3 tq6 th5 td2 tm tr6 t47 t34
+H 11 tf4 t01 tv1 td4 tl3 tv3 tq2 tn6 tc4 tl2 t34
+V 14 t34 ts2 tz2 th4 t85 tn6 tm2 tq1 t53 t37 t6 t82 t87 t56
+H 12 t01 tz6 t4 t86 tq2 t02 tp6 ts2 t34 td2 tc6 tw3
+V 4 th5 t87 tq2 t34
+V 6 tb7 tp2 t85 tz2 tc1 tr5
+H 7 th5 tp2 t53 th4 t86 tn6 tq2
+V 3 tm2 tp6 tc4
+V 4 tq6 t05 td tp2
+V 8 t52 tl5 t26 tw6 tc5 tr2 tm2 t05
+H 7 t34 tn6 tq2 t31 tx1 t91 td4
+V 7 tz6 t47 tm2 tc4 th4 tl3 tx2
+H 3 t05 tw5 th4
+V 9 t61 tw3 tq2 tc6 tw t82 td4 tq6 t05
+V 7 ts4 tr2 tt6 th t34 t85 ts2
+V 3 t52 tr3 t82
+V 12 t87 tq1 tj5 tx1 tb7 t05 tp2 tl tq6 tz6 tc5 t86
+V 11 tc5 t34 t47 tc4 tq2 tl5 t86 t87 tz4 tp1 tn6
+H 7 tw6 tx1 t92 t56 t93 th6 tj5
+V 16 tb5 t6 ts2 t01 tf1 th5 tp2 tx1 tc5 t52 tq2 tr5 tk3 tq6 th6 t02
+H 12 tf1 tq1 t47 tz2 tr2 th5 t12 t33 tp2 t52 t85 ts2
+V 4 tq1 tb tc4 tj4
+V 8 t52 tm2 tz4 t42 tq2 ts2 t82 tc4
+V 3 t6 tz4 t13
+H 6 t02 tm2 tc5 t47 tp1 tq6
+V 11 tr5 tn6 t24 t32 tz4 t52 tm2 t6 tx1 tb5 t02
+V 10 tq1 tq6 tw3 tx1 tz4 tb7 th4 tv th5 tp2
+V 11 tz2 tc4 tm2 t87 tf1 ts2 t86 tb5 tm5 t6 th5
+H 11 td4 tq6 tv3 tr2 tf1 t37 t34 tm5 tk1 tq2 t67
+V 18 t61 t34 tc1 td4 tq2 tw5 th6 t05 tz5 t53 t82 tp6 t8 t47 tx1 tb7 t86 ts4
+V 14 th6 tn6 tq6 t85 t87 tl5 td1 t47 tp6 tv3 t52 tq3 tz2 tc4
+V 6 t53 tb7 tm2 tf1 t47 tw3
+H 5 tf1 tz3 tq1 t91 tc4
+V 13 th5 t94 t91 tc5 tz4 tm2 tl5 tx1 tz6 tc2 t82 tb5 tq6
+V 9 t86 tc5 t01 tj6 tf tj1 tw5 tf1 tv2
+V 17 tw3 tq2 tc5 t05 tp2 tx2 th5 tl3 tr5 t47 t01 t53 t02 tp3 tv3 tq6 td2
+V 4 tk5 t47 t82 t6
+V 14 t52 tw3 t86 tm2 tm5 tl2 th4 tr3 tc5 tq1 tr5 tp6 tw6 t02
+V 17 t91 t53 tf2 tx1 tn6 tw6 tq tb5 tq2 tf1 t05 th4 th6 tz4 t01 tq6 ts2
+V 8 tq1 tz6 t85 tc4 t86 td4 tx1 tj5
+V 17 tx1 tq5 tz2 tr5 tv4 tk1 ts4 t34 tx4 t6 t25 t02 tc4 tq1 tp1 tc5 tz4
+H 14 th4 t37 t6 tf tg2 tp6 ts2 tz2 th5 t86 tf4 t01 tq1 tb5
+V 9 tq6 tm tq2 tw5 t53 tc5 tj4 th5 td4
+V 13 th5 tz4 th4 tw2 td4 tx1 td5 t82 tc tl5 t34 ts2 tw3
+V 9 tk1 tq6 tx tp2 t47 td4 tq2 t8 tb7
+V 4 tl3 tb5 tp2 tn6
+V 12 tc4 t34 tl3 th4 t53 tc5 th6 th5 tw3 tq6 t6 tr5
+H 14 tc3 tl5 t03 t94 tf5 tz4 tr5 tb5 tl tq1 t86 t01 tx1 td1
+V 11 t93 tz6 t74 t47 t6 t52 t87 t82 ts2 t53 tw5
+H 17 t31 tf1 tm tb7 tz4 tc4 th5 t87 t51 tv2 tk1 tr5 t01 tz2 t61 t86 tp2
+V 16 t34 tc4 t05 t55 t8 tq6 tw tc tp1 tb5 t85 tm2 tl5 t82 tx tf1
+V 15 ts2 t37 th4 tf1 t8 tk1 th6 th5 tz2 tp2 td4 tx t85 t12 t52
+H 6 tv5 t93 tn6 tq1 th6 tq2
+V 13 tz6 t55 tz2 th5 t02 t05 t47 tx1 tq1 t44 t82 t93 tn6
+V 13 tp6 tz2 ts2 tz6 tf tm2 t34 tl5 t87 tz5 tx2 td2 th6
+H 13 tb5 t87 th4 tj4 ts2 th5 tv2 tl5 tc4 tw2 t91 t02 tw5
+V 13 tb1 t37 tr5 t6 t82 tx2 t34 t12 tq1 tn6 t87 tq2 t47
+H 6 tc4 tc5 tp6 tb5 ts4 t34
+H 11 tv3 tq6 tr1 th6 tf1 tw3 tw5 td4 tb7 tq2 tl1
+V 10 tk3 t94 tf1 tq6 tq2 t73 tv5 t85 tw3 t01
+V 15 tn6 tq1 t05 tb5 th4 t87 tp2 tz t53 t82 tk3 tp6 t12 t34 tz6
+H 7 tn3 tn6 th6 tq tc tz6 tm2
+H 16 t47 td4 th5 t6 tq2 tf4 tp6 t85 ts2 tx1 t34 tp2 tz tc5 t01 th6
+H 13 t44 tw3 tp2 t82 th6 tq6 ts2 tr5 tz5 t01 tl5 tc4 tp1
+V 4 t87 t55 tv2 t85
+H 10 t6 t05 tk5 th6 tq1 tz2 tj1 t94 tm2 tc4
+V 16 tq3 t82 tk1 tz2 tq2 t42 t01 tj6 t86 tx1 tb7 tv2 tf1 t52 th4 tw3
+V 6 th5 tl5 tb5 tw3 tr2 t51
+H 17 tr2 tq6 t6 tm2 tr5 t87 tz4 t01 t65 tc5 tw3 ts2 t47 tq1 t85 tl5 tz2
+H 15 t85 tp6 tz5 tw3 t74 t31 tk3 td4 t94 tr5 tb7 tq2 tz2 th6 t53
+H 12 tm2 ts2 t34 t82 t6 t87 tz2 t37 t53 tv t51 th4
+V 7 ts2 td4 tk3 tr6 t52 tx1 th
+V 4 t42 t52 t82 t15
+H 9 tx tf4 th5 t34 tx1 th6 tp6 tn6 t61
+V 7 t52 t56 t12 th4 tl5 tb6 th6
+H 17 tc5 ts4 t34 tw3 tq6 t61 tv4 tc tz6 t47 t74 tg tf1 tw5 tf t12 tx1
+V 7 ts2 tq6 tc5 tn6 t22 t44 t05
+V 5 tb6 t56 tk3 th4 t87
+V 12 t15 tz4 tc5 tx1 th5 tn3 tl3 tf1 tm2 t95 t6 tc4
+H 4 t05 tb5 tv6 td4
+H 4 tq1 tk5 tz4 t53
+V 15 tq6 tw5 tx4 t52 t01 tq4 t82 tf1 tq2 tb7 th6 tc5 t6 th5 tz4
+V 10 tb6 tq1 tk3 th t52 ts2 tz5 th6 th5 tb7
+V 6 t94 tf1 th6 t52 t37 tz6
+H 13 tb7 tm6 th6 t86 ts2 th4 tq2 t47 tl5 tm2 tp2 t05 tp6
+H 16 tp t53 t82 tq2 tw5 t47 tc5 tf t34 ts2 tp2 tq6 t46 tq1 tn6 t86
+V 14 tm2 t87 th4 t85 tv4 t86 t01 tw5 tr5 tx th6 t12 tp2 tq2
+V 15 t01 t05 t63 tx1 ts6 tm2 th t6 tp6 tq2 t02 th4 tw6 tp2 t85
+H 12 tz2 tl2 tz6 tp2 tq1 t82 tc4 t47 tc5 th6 td4 t34
+V 12 t6 t05 t44 tb5 tq3 tm2 tp6 t34 th6 tc5 th5 tr2
+H 16 t47 td4 tf3 tl2 tc5 tv2 tw2 t01 t85 t55 t02 tp6 t94 tc4 tp2 tl5
+V 7 t82 tx1 t85 tq6 t6 t56 tz6
+H 7 t6 t46 tf t82 t8 t47 t4
+V 7 tj5 th4 t87 tf2 t53 t52 tb1
+V 10 td4 tr1 tq1 tx1 tp2 t44 tm2 t01 tz2 t47
+H 14 tw5 t05 tq6 t85 tf2 t26 t25 t34 td2 tz4 t02 t46 th tz6
+H 17 t02 tq3 tq2 t85 tw2 t47 th5 td4 t53 t01 tm2 t51 tx1 tb1 tl3 t34 tp6
+V 12 t52 t53 t05 th4 tm2 tz2 tp2 tz6 t13 tp6 tl2 tw3
+V 8 t47 tq3 tc2 tc4 t31 t34 t01 tq1
+H 15 ts2 td4 tq3 t82 th5 tb5 tq1 th4 tp2 t47 tb7 tw3 tp6 tc5 t87
+V 11 t6 tn6 tq6 th2 tz2 t51 tx4 tx1 t53 tp6 t47
+V 12 tc4 tn6 tc5 tm2 tp2 tx2 th tb7 tx4 t34 tf4 t05
+H 17 t31 tp6 t52 t47 td4 t01 t82 tz4 tc4 tj5 tl5 tb5 th6 tq6 tv2 t34 tc
+H 9 tv4 td1 tz tb5 tw5 tr2 tq1 tc4 t42
+V 9 tb5 td4 tn6 t86 t52 t02 ts4 t01 tc4
+V 13 tc4 tx1 tz4 tw3 t05 tl2 t6 tq6 tr5 td4 tm2 tz2 th4
+V 14 tn6 tq6 tr5 th6 t91 t51 t85 tp2 th t02 t34 tz4 t86 t6
+V 5 tb5 th2 t86 t93 tq6
+V 16 t93 tk6 tr5 t75 t52 t47 t02 tz4 tw5 t82 tc1 th5 t51 tx1 tf1 td4
+V 15 tp6 t52 tl5 t74 t34 tf1 tx1 t01 t05 t62 t85 t47 tn6 t6 tr6
+V 7 tz2 tb7 tf1 tl5 tx1 tw5 th4
+V 15 th6 th4 t94 t01 t53 t47 tf1 tp2 tp1 tx1 t37 tp6 tl5 t87 t52
+V 4 t01 tr6 t47 t93
+H 11 tl5 tc4 tq6 tz6 tn6 th6 t6 tx4 t53 tl tc6
+V 9 tf2 t87 tp6 t01 tm tr5 t02 tf1 tz2
+H 6 tw3 tz4 t02 tp6 t22 tk1
+V 6 td4 tx4 tz4 tz6 tl tw
+V 17 t01 t02 tq1 t6 tb7 th4 tp tw6 tw3 tf4 ts2 t53 tp2 tc5 td4 tz6 t82
+H 5 tz2 tl5 th5 t87 t72
+H 7 th6 tm2 t87 th4 t86 t52 t85
+V 7 tz tp2 tc4 tb5 tl5 tb1 tw
+V 15 tp1 tn6 t82 t34 tm2 t47 tc4 tc5 tp6 tb6 tx2 th4 tn5 tf2 td4
+V 3 tc4 tq2 td4
+V 9 tz4 t85 t01 t47 t02 t87 tp6 tb5 tz6
+V 6 t6 t8 tj4 t01 tz2 tm
+V 13 td4 t02 t87 tv4 tx2 tb5 tb7 tk5 t82 t95 tw3 tc4 tz6
+V 15 t87 tq2 tc4 t86 tf1 tn6 tj4 t74 t02 tz6 th4 tc5 tr5 t01 ts2
+H 4 tr5 t85 t34 ts2
+V 4 tv tb5 tr6 tn6
+V 16 tm2 tq1 tw5 t34 t87 tz2 tl5 tq6 tp2 t12 t52 tx1 tf tn6 ts2 t86
+H 7 t86 tc4 th6 t91 t6 tf1 tq2
+V 7 tv3 t53 tc4 th4 tz4 th t01
+V 10 t01 tz4 tq1 t47 t91 tx1 t86 td1 t37 tc5
+H 5 th6 tw5 tz2 t05 tz6
+V 15 t82 tl5 t52 td4 tz4 tm5 tz2 tf1 tf2 tr5 t51 th4 t6 tn6 t53
+H 6 tw3 tz6 tr5 td6 tm t52
+V 14 tn6 tb1 t87 t56 t01 tw3 tf1 t55 tz5 td1 tc4 t02 tm2 tc5
+H 16 tx1 tp6 tw3 th6 t75 t85 tq2 tq1 tz6 tx2 t05 tr5 ts2 tb7 t53 tp2
+V 6 tm5 td4 tp6 tx tc4 t37
+V 11 tb5 t74 tf1 tq6 tr5 tf4 tz4 td4 t82 ts2 tz2
+H 17 ts2 tc4 tz6 tf4 tl2 t87 ts4 tl5 tf1 tm tr5 tp6 t86 t35 t53 t47 tq1
+V 8 t6 tn6 tv3 tl5 tm5 tc5 tw5 t53
+H 15 tf1 tf4 tg tz2 t34 t56 ts2 tq6 tp2 tp6 td1 t02 td4 tm2 t31
+V 7 tp2 tl2 ts2 t6 tr5 t02 tq
+V 12 t47 tr5 tb7 tm2 tz5 tp6 tq6 tc5 t85 th5 t6 t34
+V 7 tw5 tq1 t01 t47 t12 td4 th5
+V 3 t44 tp2 t61
+V 8 tv t85 tq6 t82 t8 tw3 tm2 tl2
+H 9 t01 tz6 t26 tf1 tr5 tc5 tz5 th tc4
+V 17 th4 t34 tv3 tx1 t8 tr2 tc t82 t87 t91 ts2 tc4 tr5 tm2 tb6 tj4 tc5
+V 5 tq1 tl5 tp6 t86 t02
+V 17 t53 tn6 t82 tb5 t31 tl1 t86 ts2 t47 tp t8 tf1 t01 tl2 tw5 tz4 t52
+V 5 tc5 tp2 tz4 t31 t6
+V 9 th6 tc4 tm2 tf2 tw3 tw5 tc5 t34 tf1
+V 4 tx2 th2 tw3 th6
+V 8 tq2 tz2 th tf2 ts2 t44 tq6 tw5
+V 10 tb6 tf1 tb5 tn6 tl3 ts2 tw6 t34 t51 tq3
+V 6 th4 t05 tq6 t86 t87 t02
+V 13 tv2 tw3 t87 t01 t6 t34 t86 t02 tl3 tm1 tc5 tw5 t94
+H 3 tp6 th6 t22
+H 5 ts2 th5 td4 t52 th6
+V 3 tj5 tq2 tn6
+V 10 tr5 tq1 tz4 t52 ts2 th5 t82 t02 tz6 t6
+V 18 th4 tp2 tq1 t6 t02 td4 tq6 tc4 tl t56 t65 ts2 tl5 tb7 tz5 t01 t2 tq3
+H 8 ts2 tz2 tl2 tr5 tr6 tp2 t6 t02
+H 7 tm2 tr2 tz5 tz2 tc4 t51 tx1
+V 13 t2 tw6 t05 tw5 tl5 tr5 tf1 td4 th6 t22 tm2 tq1 tz4
+V 12 tl3 tp2 t02 tq3 t05 t34 th6 tz2 t47 t87 t57 tx1
+H 9 tc5 t02 t05 t94 t82 th4 tq2 tn6 t91
+V 9 tx1 tl t52 t02 tb5 t53 tf1 tc4 th4
+V 17 tl5 tq t05 tw3 tw5 td4 tc1 tx1 t6 td2 t82 tf1 tn3 th4 th5 tb5 t87
+V 15 tr5 tp6 tc tc5 tp t85 tq6 tq2 t01 ts2 tq1 t47 tx2 tl3 t87
+V 11 tp6 tq6 tc t86 th4 tk3 tr2 tz6 tz4 tf4 ts2
+V 14 t52 tw5 tw3 ts2 t01 t87 tl1 tq1 t34 tr5 tc4 tc6 t05 tj5
+V 12 tw5 t6 td2 tq6 t85 t47 t34 t53 tn6 tv3 t86 tp3
+V 13 th4 t94 tf tw5 t2 tw3 tl5 t52 tb7 tp2 tf1 th6 t6
+H 12 tt2 t52 tz5 tr5 tj5 t37 t86 tc4 t22 ts2 t85 tb7
+V 15 t82 tq1 tp2 t37 t34 tw6 tm5 t05 tq2 tl t52 t02 tc4 tx1 t42
+V 13 tn6 t87 tr5 tl5 t82 t6 tx1 t05 tz2 tt t72 tx tz4
+H 7 tc4 tr5 tb5 tp6 tw5 t86 tb7
+H 15 tz4 tx1 tc2 tz6 ts2 tw5 tq1 th4 tr5 t53 t34 tc4 td4 tv4 t02
+V 11 t47 tz6 tn6 tw2 t96 tl5 tb7 tz2 tb5 tq4 tr6
+V 16 tv t82 tk5 tn tp6 th4 tc5 t53 t85 t52 tm5 t12 tr6 tf t6 tn6
+V 17 tx1 t86 tq2 td1 tl4 tr5 tw t01 tp6 tb6 th4 tv4 tn6 tf tl2 tl3 tj6
+V 9 tn6 tm5 th4 t05 tb5 t86 t51 tz4 tw5
+V 6 tz5 tb5 tc t42 tz4 t82
+V 8 tx1 th4 tx4 t82 tf1 tq1 tz4 tb7
+V 10 t52 t02 tr5 tz2 tl5 t3 t47 td2 th5 tf1
+V 17 tf1 t56 tt6 tc4 tz2 t22 tp2 td4 tr5 th6 tv4 tb1 t74 tc5 tq6 tn3 tz4
+H 4 t82 td1 tc4 tf
+H 8 th5 tz5 t05 tr5 t85 tq1 t02 tk3
+V 14 t31 t85 tp2 tf1 t42 tp6 tx2 t01 td4 tw6 th4 tw5 tq2 ts2
+H 7 t05 th4 td2 tz6 t6 tz2 tb5
+H 13 th6 tn6 t47 t82 tm4 t52 t53 td4 tb5 tq2 t85 td1 tx4
+H 9 tx tj4 t25 tb6 tb7 tl5 t65 tf1 t47
+H 14 tv3 tb7 th6 tz6 t85 t53 td4 tr2 t86 t61 tz4 t01 t87 tq2
+V 16 tx1 tr5 ts2 tm5 td tm2 t12 tv2 tj5 tq2 tq1 tz6 tr3 tc5 tf1 tp6
+H 7 t2 tp6 tw3 t85 tr2 tx1 tc4
+V 5 t15 td4 t7 t85 tl5
+V 6 tn6 tj5 t22 t34 t01 t52
+H 11 tp6 tj4 t22 t05 tw3 th4 tz6 tq2 tc5 tw5 t52
+V 17 tk1 tm2 tw5 td4 t34 tc5 tb5 tw3 tx1 ts2 tx t8 t52 t86 tz4 tr5 tq2
+V 10 tl5 tw4 td4 t02 tx tn6 th5 tv4 ts2 tf
+V 13 tz2 tq6 tq1 tr5 th6 t85 t94 tl5 tn6 tp6 th5 tz6 t01
+H 13 tj1 tp1 tf1 tx t82 tj5 th4 tl5 tl3 t47 tb5 tp6 t52
+V 15 tm2 tf1 td4 tn6 t56 t61 t55 t52 t02 tp5 tz5 tv t05 th6 tq2
+V 14 th4 tf1 tk5 tr2 t85 tb7 t86 tx4 tq3 t6 t15 t53 tw5 tl5
+V 14 tp2 t93 tl5 tv2 tz4 t34 t6 t52 ts4 t85 tz2 tq1 tq2 t87
+V 3 th6 t47 tw4
+V 13 tz2 tb5 ts2 t52 t87 tc4 t41 tw3 t05 tp6 tr5 tq6 t02
+V 15 tb7 tq1 th5 t85 tw t05 tc5 t82 tl2 t87 t01 t52 tz4 tl5 tr5
+V 5 t86 tz4 tm tw3 t42
+H 6 t53 tp4 tq2 tz6 th6 t6
+V 8 t85 tl5 tc4 tq2 tx t87 tb7 tq1
+V 13 tz4 t05 t85 tb5 t6 tk1 tc4 ts2 td4 tn6 tj5 t02 tk5
+V 12 tx1 tc5 tw5 t8 th5 th2 t53 t52 tg2 tp1 ts2 tq5
+V 14 tl5 tp6 td1 tb5 th tf4 tz6 tc3 t52 tz2 t81 t86 tw5 tm2
+H 12 t52 t34 t02 tq3 tz2 tw3 t6 t56 tc4 tq t86 tx1
+V 4 t34 ts2 tq6 th5
+V 5 t01 tc4 tw3 t85 tp2
+V 14 t6 tz6 t85 tb7 t34 tf2 tp6 tl5 tz2 td tm2 tc4 tk3 td4
+H 7 t01 tb7 tq1 tf tm5 tc5 t53
+V 4 th5 tq6 t52 t85
+H 3 t47 tb t34
+V 10 t02 tq5 tw3 tc t27 tf1 tc1 tv3 tq6 t61
+H 14 td4 tq1 t52 tb5 t87 tr5 tq2 tp6 t05 tz2 tm2 t37 th6 t85
+V 15 tl5 tv3 tw3 th6 t53 t87 t05 tc5 t01 td4 tj5 tb7 th5 tx4 tf1
+V 3 t56 tz6 tr3
+V 3 th5 t61 tr1
+H 6 tm2 tq1 tx1 tx2 th t02
+H 7 t86 tp2 tc4 tz2 td4 tz6 th5
+H 7 ts2 tb5 t02 th5 t05 tf1 tq2
+H 4 tl5 tm2 th5 t82
+H 5 t47 tc tp2 tz t53
+H 14 t74 tq2 tq6 tm2 tb5 tc5 th5 t53 t94 t47 t05 ts2 tv2 t65
+V 11 tq2 t47 tq1 tz6 t85 tx1 t34 tc1 t05 tz4 th6
+V 13 t34 tb5 t52 tw5 th5 t01 t02 tp6 tw3 th4 tj4 t85 tq1
+V 13 tr6 tp6 tq1 th5 tx4 tc5 t53 t52 th4 tn6 tx1 t87 th6
+V 17 td4 tz2 t86 tx4 t52 ts2 t44 tt6 tp2 t34 th5 tf5 tm2 tp1 tl3 tr2 th6
+V 13 ts2 tz2 t86 tr5 tp6 t05 tb7 tb1 td4 tq6 tc4 t6 th5
+V 9 tl2 tb7 t01 tz4 t53 t47 tq1 td4 t05
+H 12 tf1 t62 t3 tw3 tr5 t6 tm2 tz t91 tm t01 tc5
+H 11 t52 t53 t22 td1 tq6 t86 tb5 tn5 tw3 th4 t6
+V 6 t93 tq1 ts2 tc5 tz2 tc4
+V 12 tl5 t34 t52 tb7 tm2 t6 t85 t35 t01 tc4 tr5 td2
+V 7 tv3 tl3 td4 t34 tx2 tx1 t74
+V 11 tq4 tx1 tr6 t86 tf1 tl tr2 th6 t6 tr5 tb6
+V 3 tb6 t85 tw1
+V 16 t47 tw5 tc2 tj5 tz2 tf4 tc5 tv2 t01 tc t86 tw3 t34 ts2 t85 td4
+V 14 tp6 td4 t6 tf1 tb1 tz4 tr5 t47 t34 th4 tb5 tk3 t52 tn6
+H 13 tc tp2 tw6 tl2 tb5 tm2 tl5 tz6 tw3 tp3 tf1 t53 td1
+H 15 t82 t31 th5 ts2 t94 tq6 t01 t6 td4 t87 td2 t86 tz4 tq2 tf5
+V 7 t74 tq6 tq2 tk5 tk3 t05 tp1
+H 16 tk5 tc1 t86 t05 tx1 tz2 t94 t52 tm2 tk1 tc5 t2 tx tw6 t01 tl5
+V 13 t47 th6 th4 tw3 t01 tk3 tf4 tj5 tp2 t82 tr5 tz4 t85
+H 16 ts4 tc4 tp6 tz2 tx1 tq tq1 tm5 tx2 th4 tz4 tf4 tq2 tr5 tg t34
+V 15 tf2 tb7 t44 t86 t53 tw3 t02 tq6 ts tp2 tq4 tz4 tf tz5 t01
+H 14 tq2 tm2 tp6 tc5 tx1 ts2 t82 tx4 t02 t52 tb6 t53 tc1 tp2
+V 6 tw3 t52 tc5 tb5 t75 tx1
+V 9 t51 tf tc4 tv3 tb5 tv4 t34 tx4 tq2
+H 13 t31 tr5 tm5 tq t86 tw5 t87 t8 t6 tl3 tp6 tc3 t53
+V 7 tm tp6 tx1 tz6 t86 tz2 t74
+V 3 t6 tv6 tb7
+V 15 tz4 th5 t32 th4 tx1 tb7 t22 td4 tw5 tz2 tl3 tw3 t56 tk5 tp
+V 7 th4 th6 ts2 tq3 t85 tr5 tw5
+V 14 t53 tq2 tp6 tz6 tq6 td tb5 t34 tj5 tf1 tk5 t72 t05 tv2
+V 10 t53 t47 tm5 tq6 td1 tp6 th4 tc1 tc5 t86
+H 11 t47 tb5 tf1 tp t02 ts2 tz4 tv3 tl5 tl t86
+V 9 tp2 tb6 t02 t87 tr5 tw5 tf1 tb5 t37
+H 14 tf1 tw2 tb5 tc4 tz6 t6 tc5 t02 th5 t52 t12 t53 t61 tp6
+V 6 tq2 tk3 t52 tl5 tz2 tb1
+H 17 tp3 tq2 tb5 tf1 tc1 tz tc4 t13 th6 tr5 t47 t02 tl5 tf tn1 tn3 tc5
+V 6 tq1 t85 t61 th5 t42 tf1
+V 7 t86 tn6 td4 tq2 t52 tq1 tz4
+H 8 tb1 tq2 tz4 t86 tc4 tq6 t53 th6
+H 14 t87 tl3 tx4 tz4 tz6 t47 td4 t65 tq2 tq1 tw5 t34 t85 tw3
+H 15 tl2 t01 tx1 tf1 t87 tg t44 tp6 tb7 tz2 t12 tc4 th5 ts4 tm2
+V 7 t02 tw2 tc4 th5 tb7 tm td4
+V 9 tz2 tq1 tn6 tf2 th5 t52 t12 t01 t6
+H 17 tp2 t86 th5 tr5 tq3 t72 t34 t46 tx tc5 t44 tq6 tw3 t3 tb5 t66 t82
+V 8 tm tm2 t02 tj1 tl2 t01 tl5 tp2
+V 16 t52 t62 tt6 tb6 tq t05 th6 t47 tr5 th5 tx1 tz2 t8 td4 tp6 t25
+H 19 tz2 th6 tc2 t6 tm2 tz5 tz4 t53 t52 tf4 tc5 tx1 t34 t93 t85 tr5 ts4 td2 th4
+V 6 t74 tx1 tz2 t86 t34 tg2
+V 6 tm5 t47 t87 tx1 tb7 tf1
+V 14 tb7 tq1 tz4 tf1 t34 t63 tf2 tr1 tc4 tr5 td4 tz2 t82 tz6
+V 9 th6 tv3 t82 tb5 tl5 tw3 t86 t34 t02
+V 6 tz2 tc5 t01 tl5 ts4 tb5
+V 2 tj1 t05
+H 6 t86 t52 tb5 tl5 t53 tq6
+H 6 tz2 t6 t47 tp2 t52 ts2
+V 17 tb5 tc4 tm2 td2 t52 tq2 tz6 tp6 th6 tv t47 tf t42 tw3 tp2 tr2 t82
+V 10 tc3 tw5 t86 tz4 tr5 t57 t82 tf tp2 t53
+V 3 tw3 th6 t31
+V 15 tm2 t82 tw5 t52 th6 t86 th5 t03 t6 t87 tc2 tl5 tz4 tr5 tq1
+H 3 tz6 t34 tp6
+V 16 t86 t05 t97 tw5 t91 t85 tf1 t34 tw3 tl t56 t51 tq2 tx1 td4 tr2
+V 14 tc tc4 t74 t56 t05 tf4 t52 tp2 t82 t01 tn6 tz2 ts2 tm2
+V 17 t85 tc5 tq6 tq5 td2 tx1 th4 tq1 tc4 tw3 t15 t93 tk3 tb5 tj5 tv2 tf1
+V 13 tz2 t82 tn6 t01 t05 th5 td4 tp6 t34 tw3 t87 tc5 t85
+H 4 tb6 tp6 tq1 tl5
+H 5 t86 t05 tx4 tr5 tq2
+V 5 td4 th4 th5 td2 tz5
+V 3 t56 th5 th6
+H 7 tw3 td4 t02 t82 tf1 tf4 tz5
+H 16 t85 tn1 t05 tz5 t82 tz tm5 tv5 tq6 th2 tc4 t01 t34 tq2 tx2 t53
+V 14 tf2 tz4 tv6 tc5 tc4 tw5 tp2 tw3 tq2 t34 tb5 t22 t01 t51
+V 5 t82 t47 ts2 th4 t86
+H 3 t02 tw3 tl1
+H 12 tf1 tq1 tc1 tw5 tj6 tc4 t34 t33 tp2 tl3 tq2 t47
+V 9 td4 t64 t87 tp2 tn6 t82 tf1 tw3 tl5
+V 14 tn3 tp1 tx tc5 tm2 th4 tq1 tx1 t6 t47 t87 tw3 tz4 t85
+V 5 t6 th4 tz6 td4 ts2
+H 5 tq2 tc5 t47 t05 tq6
+V 5 t34 t05 tw5 t37 tz6
+V 14 tc4 t47 tf2 tq2 td4 tn6 tw3 th6 th5 t37 tr5 tz2 tq1 tb5
+V 14 t6 tz6 th5 tr6 tv5 tn6 tw tw5 td4 tz2 td6 tq2 t01 t52
+V 10 tf5 t02 ts2 tc5 th4 ts4 t52 t6 tr5 td4
+V 13 t53 t01 tc4 tz6 tx1 tp6 tb5 tz4 tf1 tv4 tp1 t22 td4
+H 5 t34 tp6 tr5 t85 tz2
+V 8 t52 tp1 t6 tp2 th5 tc4 t86 tc1
+V 11 t47 tz4 t6 th4 tv4 ts2 tf1 t02 tc tz6 td
+H 16 td4 tp6 th4 tb5 tr5 tw5 t56 tc4 ts2 th5 tz4 tn6 tb4 tq1 tx1 td2
+V 10 t82 tc1 tv2 tq6 tl5 tf4 t02 t53 t6 ts2
+V 9 tw6 tl t01 t8 t13 t56 tf t52 tz2
+V 4 tq2 td4 t01 tx5
+V 7 tw3 tq2 t47 t53 t87 t6 tl5
+V 4 tc4 tp6 t52 t34
+V 8 t6 t82 t87 tq6 tm5 t01 t03 th6
+H 3 tn6 tp6 tz6
+V 9 t05 t47 td tx2 tf1 tf t33 tw3 th6
+H 7 t01 t82 tp2 tb5 tq6 tw3 tl
+V 6 tz t02 ts2 t86 tb6 tq1
+V 3 tv6 tc4 t52
+V 13 t87 tf1 tb7 t93 t24 td4 t05 t01 t91 tz4 t86 th4 tp6
+H 14 td4 th4 t26 tb5 tp1 tz6 tp6 t01 th5 t82 t52 tx1 tp2 tn6
+H 13 t75 t82 t47 tz6 t01 td4 ts2 t34 tx1 tz2 t02 t91 tc5
+V 7 t87 th6 tf1 t42 t82 th5 tv4
+H 14 td4 tp2 t74 tn6 ts4 t01 th6 tc4 t91 tc5 t34 tl5 t61 tp6
+V 12 tp6 tb6 tm2 tz6 t22 t87 t52 tq6 t01 tb5 tb th4
+H 7 tw6 tf1 tp2 t37 t94 t6 t47
+H 6 t2 tq2 t8 tp6 tr5 tx1
+V 17 tw3 tr1 tm2 tj5 tz6 t53 tq tq3 ts2 t52 t91 tq1 tb7 tx tm5 t82 t6
+V 11 tr5 t05 th4 tq3 td4 t22 tx5 t8 tw tw5 t51
+V 11 t47 tl2 td2 tc4 t02 tk1 tp2 tr6 tr5 t05 tq6
+H 12 tb1 tz4 th6 tl5 tc4 tm tq1 t05 tw3 tc5 th5 t51
+H 8 t8 th6 tp6 ts2 t34 td4 t01 tl5
+V 4 t85 tc4 td1 tq6
+V 12 tb5 tk1 tn6 tc4 tm2 tl5 tq1 t44 tq2 tq6 tz4 tc
+V 13 tp2 t53 tr5 tm2 t47 t85 tr2 t87 tp6 t63 tq6 t82 t6
+H 15 t12 tc4 tn6 t34 td2 t85 tl1 tw3 tc5 t6 t01 tq6 th4 tz4 td4
+H 8 tk3 tz4 tm5 tq6 th6 ts2 tc4 t87
+V 6 tl5 tf1 t6 tw5 t8 tc1
+V 15 tc5 t57 tm2 tb5 t82 tw3 tf5 tc4 tz2 t34 tf1 tq1 t95 td2 tr5
+H 3 t05 tm2 tz2
+V 3 tc t61 tg
+V 9 tg4 t52 t87 tz2 th4 tc4 t34 t86 tp6
+V 14 tx1 t82 t34 t86 tz2 tz4 tn6 tb7 tl t47 tp6 tw3 tv4 tq2
+V 12 t35 tk1 tq2 tw3 tp2 t53 tt1 th4 tf1 t34 tx1 t37
+V 10 tw3 td4 tl2 t53 t86 t05 t82 t93 t34 tx2
+V 13 t96 t05 td4 t52 t01 tx1 t93 tz2 tq2 th4 tc tn6 t31
+V 9 tl5 tx1 tf1 tz2 td4 t42 tb7 tp6 tw5
+V 16 tx1 t02 tz6 th5 t56 tn6 th6 th4 t86 t61 tp6 tr6 t47 tm t82 t53
+V 10 t02 tv2 tr2 tx tq2 tz2 tp2 th6 t47 tp6
+V 14 tx2 tq2 tf tz4 tb7 tq6 t87 t6 t61 tb5 tl5 tm3 t85 tx4
+V 3 t05 tl5 t02
+V 10 tw5 tz2 t57 tv2 tz4 tf1 tq6 t02 t85 t91
+V 5 tf2 tx4 t01 th6 t6
+H 8 t02 td1 tc5 tq2 t6 t53 ts2 tp2
+V 12 t53 tx1 t61 t42 t8 td4 tf1 th6 tq2 tw5 tq6 tw3
+H 10 t56 t01 tz6 ts2 tl2 t51 tl5 tw6 tk3 tc4
+V 6 tq1 t26 tq6 t47 tb1 t01
+V 18 tb6 t56 tf1 t34 tp2 tl tk1 tr5 t44 t02 tn6 tq1 tx t85 tx1 t6 t31 t05
+H 8 td4 t05 tq6 tz2 tq2 th6 t87 tn6
+H 8 tx1 t86 ts2 tb1 t52 t85 tl1 tl5
+H 11 t85 th6 tx1 td4 tl5 tc4 tt6 t52 tm2 ts2 tw3
+V 14 tq2 tc5 t31 tz tc4 t93 tm tz6 tr3 t63 t47 th6 t01 tv4
+V 12 tl tr3 tr5 tp6 t47 tl3 tq1 t53 td4 tz2 ts2 tx1
+H 10 tb1 tp2 th4 t85 t52 td4 tw5 th6 tl5 t51
+V 14 tx1 tq2 tz2 t34 td1 tq3 th6 tw3 tk5 tj4 t91 ts4 th4 tb7
+H 16 tr tm2 t85 tl5 tr6 tn6 ts2 tq2 tw5 tf1 tq6 t05 tr5 tx t52 tz2
+V 12 t05 tc5 t85 th4 t37 tf4 tc4 tz2 t42 t47 tp6 t53
+V 3 t44 tr6 tq6
+V 9 th5 tx1 th6 tc4 t52 tq6 tz2 tb1 t6
+H 5 t74 tq1 t52 tc5 tl5
+V 13 tp2 th t47 t85 t34 tb5 tz2 th6 tw3 tc1 t02 tt2 tc4
+V 11 t51 tw5 t87 tw4 th tz4 tx2 tf2 tq6 tx1 tq1
+H 17 tc5 t53 tb5 t87 t86 tm2 tb7 tc4 td2 tz t82 t34 t6 tz4 tq6 tv3 tw
+H 17 t85 tr5 tb tr2 tf tk1 tz6 tx1 tc5 tw5 t34 tq3 tb5 tz2 tl5 th4 tl3
+V 8 tf4 th5 tx1 tr5 tf1 t34 tc5 tk3
+H 7 tm2 t87 tw3 t34 t55 tn6 td4
+V 13 t6 t37 td4 t47 tz tf1 th6 tj6 ts2 tb5 tc3 tc5 tl5
+V 11 tl3 t05 t01 tm2 tb7 tc5 tb5 tz4 tn6 t51 tx1
+V 11 t87 tz2 tx1 ts4 tc ts2 tq6 t47 t6 t05 th5
+V 16 tq2 tp2 tq1 t02 tk5 t87 tc5 t6 th5 t82 t52 t34 tn6 ts2 td4 tx1
+H 10 t56 tz2 th5 t26 tx1 t82 t25 t6 tw5 t86
+V 12 t53 ts2 th tc4 t05 tc t87 tb tx2 tf1 tc5 tz6
+V 13 t6 tw3 t86 tz6 tp6 tz4 t82 tq6 tm2 t02 tg2 tx t51
+V 14 tb7 tp2 tq6 t02 tw tr2 tb5 tl t01 tp6 tw5 t31 tf1 tc1
+V 15 t05 td4 tx1 t85 t93 tw5 th6 t6 tz4 tq1 tz6 t82 tb5 tp6 tq2
+V 11 t87 tq2 tm2 tb7 tp2 tq6 tf4 tr5 t05 t34 t3
+V 10 th6 tp2 t05 t82 t85 t52 tl3 ts2 tx1 th4
+V 5 t6 t44 tp2 t47 tq6
+V 9 t05 t01 tl2 tw5 tm2 tw3 t53 tc5 tj1
+V 5 t86 t91 th4 tf1 tn6
+V 10 t01 tc5 th t6 t05 t87 tr6 t02 tq6 t37
+V 7 tf5 tz4 tv2 tj5 tc tx1 tc5
+V 9 tr6 tz2 tn6 t34 tn5 tr2 t53 tq6 th5
+H 3 tf1 th6 tb5
+V 13 tj5 tb7 th5 tz t01 th6 tl5 tr5 tn6 tw5 tz6 tn3 t61
+V 6 t52 t02 tv4 tz4 tc4 tv2
+V 14 tm2 ts2 tc5 tr5 t94 ts4 t82 tq3 tq2 t05 tq6 t34 th5 th
+V 12 td4 t87 th5 tn2 t86 tb5 tz2 tz6 t52 tm6 tr5 tf
+V 6 tk3 td4 t6 tm2 t26 tc5
+H 14 tq3 t56 t34 tx1 tw5 t02 t6 tw3 tq2 t52 t1 t93 th4 tj1
+V 16 tb5 tc1 ts4 th5 t91 tv3 tc5 th6 tl1 tl2 t01 tp2 tf1 tx1 t47 th4
+V 15 tq6 tn3 tq1 tf1 tn6 t53 t56 tb5 td4 tm2 tx tr5 t05 tz6 tp6
+V 13 t86 t87 tx2 t82 tq2 tc4 t34 th6 t44 ts2 tm2 t85 tx1
+V 7 ts2 th4 tp6 t6 tz6 tz4 tq3
+V 14 tl3 t02 tz2 t85 t87 tz6 th tq2 ts2 tc4 t34 tm2 tp2 tf1
+V 5 td4 t85 tz2 th4 tn3
+H 4 tf4 t52 tx2 td4
+V 7 t33 tb5 tz6 tq3 tm2 t31 td4
+V 11 tk3 t86 t94 tm2 tw3 th4 t6 tq1 tq2 tp2 tj4
+V 6 t53 tc4 th5 tz6 tf2 tp
+V 15 ts2 t82 tw5 tw3 tc4 t87 tq1 t93 t33 tz4 th5 t85 tq2 t02 t22
+H 16 tn6 tq1 tx1 t53 tr5 tw5 t05 tb5 tf4 tc5 t85 tw3 tf1 t31 t73 tf2
+H 3 tp2 tz6 t01
+V 8 t52 td4 t82 th5 t05 tj4 t85 tl2
+H 16 t85 t05 t47 t86 tb5 tl3 tz2 tf1 t44 tb7 tq1 tr5 tz6 tx1 t56 tr2
+V 13 tl5 tz6 tp tw5 t47 t52 tx4 tc5 tp6 th5 t44 tq2 tf4
+V 6 tz2 t51 t85 t05 t52 th4
+V 5 tp6 th t05 th6 tb5
+H 4 tv4 th6 tc4 t87
+H 6 tr5 t86 t85 tj5 t47 tq4
+H 18 tx t01 tw5 tp2 t53 th5 tq2 td4 tn3 tn6 tc4 t87 tf1 t34 tw4 t05 t93 t47
+H 14 t41 t05 t6 tl5 tw5 t42 tz4 tn3 t52 t53 t34 tw3 tr5 t02
+H 3 t6 t34 tz4
+V 10 th4 tz4 tb7 tc5 tq6 t52 tp6 t85 t24 tp1
+V 15 tf ts4 tq1 t85 t53 tc tb5 t52 t12 th4 tb6 t82 tz2 tp1 tv2
+V 16 t87 tz4 tp6 tm2 tp2 t52 t34 tx2 t12 t85 ts2 tc4 tl5 tc5 tv2 t8
+V 17 tl3 tx1 t42 tn3 tm t06 th6 t86 tb6 tr5 t47 tb5 t65 tf2 tp6 tx tz2
+V 15 tv3 t94 tw6 tb5 th5 tk3 tv4 th4 t01 t02 tm5 tn6 th6 t12 t6
+H 14 tz6 t05 tq2 th5 td4 tx1 tc4 t02 tz t91 t34 tw3 tk1 t01
+H 4 th4 tc5 t02 t67
+H 6 tl5 tn6 t86 t94 t6 tv3
+H 13 t87 t61 tf1 t42 t86 td4 tp2 tz tl3 th5 tk3 tb5 t85
+V 12 tq1 td4 tr5 tm2 t02 tp6 t94 tz5 ts2 tx t01 tl6
+H 17 tp6 tn4 td4 tm2 tq6 tl5 tp tn6 tx1 tj4 t05 tc4 tq2 t6 tp2 t94 tr5
+H 5 t6 td2 t52 tz2 td4
+V 5 th4 tz5 tf tm2 tj5
+V 4 t47 tz2 td4 tw5
+H 7 tq6 tv4 tf1 tm t61 ts2 tm2
+H 15 tx tf4 tz6 tl5 t6 t74 tw5 tb5 t47 t05 tv4 t87 tf1 t26 tp6
+H 13 tf2 t53 tc5 tm2 tj5 t74 tb5 t37 tq1 t85 t47 th5 t82
+V 16 tx4 tz6 tp6 tb5 t53 t34 t87 tv6 t44 t82 t05 tw3 tf1 t47 tc5 tq1
+H 16 tz5 tw3 td4 t01 tb5 tx1 tw5 t85 tk3 ts4 ts2 t05 tz4 tt3 t6 tq1
+V 10 tl2 ts2 tz4 tp1 t82 th5 tq6 t34 t56 tc1
+V 7 tm2 t47 tq2 tl5 tf1 tp6 t82
+V 8 tn6 tb5 t87 th4 tm t02 tq2 tj5
+H 7 tb5 th4 tr6 tr5 t01 tz4 t53
+V 8 t73 ts2 td4 tq1 tw5 tc4 th4 t52
+H 11 td4 t4 tb7 tr5 tp6 tf th5 t02 td2 tl tq1
+V 13 tb6 tw5 ts4 tk4 t33 t6 t05 ts2 t94 tc5 th4 t87 tv6
+H 10 tw3 t02 tx1 th4 tb5 tw5 t87 t61 t22 tz2
+V 12 th5 t05 t01 t15 tq2 tc1 t34 t87 tz2 tc4 t86 td4
+H 12 tc4 tc5 t53 tl tq6 th5 tr5 t01 td4 t87 tq1 tp1
+V 10 td4 tx1 t82 t53 tf1 tl t34 tk5 t6 t85
+V 4 tx1 t8 t53 t56
+H 7 tq3 tj6 tr5 t75 t37 tl5 tp6
+V 3 t6 tj3 tc4
+V 5 tr5 tc5 t86 t47 th5
+H 4 t51 tc5 t86 tm2
+H 4 t12 tq6 t6 tw3
+H 12 t6 tf th5 t47 tc5 tp6 t87 t74 tk1 tc4 tq6 tm5
+V 14 tz2 tp3 t72 tp2 tv4 t22 tx1 tp6 tx2 t86 tc4 th4 t6 tb2
+H 12 t33 t47 tr5 tn6 t05 ts2 tz2 t44 tm2 t34 tp6 tq1
+V 5 t44 ts2 tl5 t82 th6
+V 7 tq3 t52 td1 tq6 tr5 tx1 tl1
+V 14 td4 tx4 t82 tz4 t53 t86 t85 tz2 t01 t6 tp3 tq1 t16 tw5
+H 9 tz2 tk3 tn3 t31 tq6 t86 t22 tn6 tw6
+H 16 th4 tk5 t82 t05 tz2 tf tw3 t86 t52 tq1 t53 tp3 tf4 tc5 t47 tv3
+V 3 tr5 tm2 t86
+V 9 tx4 tl5 tr5 tm2 tj5 tp6 th5 tb5 tn6
+V 5 tb7 tq2 tk5 tq6 tf
+V 7 th5 tx1 tr5 t87 td4 tq1 ts2
+V 6 t86 t82 tz4 t93 tq6 t62
